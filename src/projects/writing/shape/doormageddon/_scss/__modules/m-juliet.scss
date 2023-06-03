@@ -1,0 +1,132 @@
+.m-juliet__gallery {
+
+	@include bp( 'before', $milli ) {
+		
+		.m-juliet__sectionette:nth-child( 2 ) & {
+			
+			@include _decoration(
+				squareB,
+				true,
+				1.5*$space,
+				-10%,
+				1.5*$space,
+				-20%,
+				-1,
+				0
+				
+			);
+			
+		}
+		
+		.m-juliet__sectionette:nth-child( 4 ) & {
+			
+			@include _decoration(
+				triangleB,
+				false,
+				$buffer,
+				20%,
+				0,
+				5%,
+				-1,
+				-15
+				
+			);
+			
+		}
+	}
+	
+	@include bp( 'after', $milli ) {
+		
+		.m-juliet__sectionette:nth-child( 2 ) & {
+			
+			@include _decoration(
+				squareB,
+				true,
+				-.75*$space,
+				15%,
+				-1.75*$space,
+				-5%
+			);
+			
+		}
+		
+		.m-juliet__sectionette:nth-child( 4 ) & {
+			
+			@include _decoration(
+				triangleA,
+				false,
+				-$buffer,
+				0,
+				-$buffer,
+				2*$space,
+				-1,
+				-12.5
+			);
+			
+		}
+	}
+	
+	@include bp( 'between', $milli, $centi ) {
+
+		.m-juliet__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__gallery( offset, right );
+		}
+		
+		.m-juliet__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__gallery( offset, left );
+		}
+
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		
+		.m-juliet__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__gallery( centered--a, right );
+		}
+		
+		.m-juliet__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__gallery( centered--a, left );
+		}
+
+	}
+	
+
+	@include bp( 'after', $deci ) {
+		
+		.m-juliet__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__gallery( centered--b, right );
+		}
+		
+		.m-juliet__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__gallery( centered--b, left );
+		}
+
+	}
+
+}
+
+.m-juliet__imgWrap {
+	
+	@include bp( 'before', $milli ) {
+		@include _vertigallery__imgWrap();
+		
+		.m-juliet__sectionette:nth-child( 4 ) & {
+		}
+		
+	}
+
+	@include bp( 'after', $milli ) {
+				
+		.m-juliet__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__imgWrap( right );				
+		}
+		
+		// Opposites
+		.m-juliet__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__imgWrap( left );	
+			
+				
+		}
+	}
+	
+}

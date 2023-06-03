@@ -1,0 +1,32 @@
+.m-golf__gallery {
+	@include _decoration(
+		triangleA,
+		false,
+		$buffer,
+		0,
+		0,
+		5%,
+		-1,
+		-12
+	);
+	
+}
+
+.m-golf__imgWrap {
+	width: calc( 41% - #{ $gallery__space / 2 }  );
+	
+	&:nth-child( 1 ),
+	&:nth-child( 4 ) {
+		width: calc( 58% - #{ $gallery__space / 2 }  );
+	}
+	
+	&:nth-child( 2 ) {
+		margin-top: 0;
+		@include align_self( flex-end );
+	}
+	
+	&:nth-child( 3 ) {
+		@include align_self( flex-start );
+	}
+	
+}

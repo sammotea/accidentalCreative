@@ -1,0 +1,60 @@
+.m-bravo {
+	
+	@include bp( 'after', $deci ) {
+		margin-top: 1.5*$space; // magic
+	}
+
+	
+	p {
+		
+		@include bp( 'after', $milli ) {
+			font-size: $bravo;
+		}
+	}
+	
+	
+}
+
+.m-bravo__titleWrap {
+	position: relative;
+	
+	@include bp( 'between', $milli, $deci ) {
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		top: -( $space + $border--m /* In to $alpha */ + ( $caesura /* Against squiggle */ ) + ( 0 /* same padding as header-to-squggle1 */ ) );
+		@include translate3d( 0, -100%, 0 );
+	}
+	
+	@include bp( 'after', $deci ) {
+		margin-bottom: $space;
+		text-align: center;
+	}
+}
+
+.m-bravo__title {
+	@include _text--standout();
+	font-size: $delta;
+	
+	@include bp( 'between', $milli, $deci ) {
+		font-size: $echo;
+		line-height: 1;
+		color: $white;
+		text-align: center;
+		text-shadow:
+			.125*$buffer .125*$buffer 0 $black;
+	}
+	
+	@include bp( 'after', $deci ) {
+		font-size: $foxtrot;
+	}
+}
+
+.m-bravo__titleText {
+	
+	@include bp( 'before', 26rem ) { // magic
+		& > span { display: block; }
+	}
+}
+

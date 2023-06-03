@@ -1,0 +1,195 @@
+.m-alphaWrap {
+	position: relative;
+	background: url( /writingAssets/doormageddon/_img/alpha--sm.jpg ) center center / cover no-repeat;
+	
+	box-sizing: border-box;
+	@include _interstitial();
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		@include _preImg();
+	    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/2wBDABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoXHh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQED/2wBDAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAAeABYDASIAAhEBAxEB/8QAGgAAAgIDAAAAAAAAAAAAAAAAAAMCBAEFBv/EACoQAAIBBAADBgcAAAAAAAAAAAECAwAEERIhMXETIkGBobEFJDNRU3KR/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AOck5ndguOYHePpSXKgd0kg/fhx8qclrdXTuLeJpdSdiMALknGSxUetNj+E3LPrd/KRfmfVkBPADuP49aDXROe2H6n3WistEYbx4SQxj2XZeR4qQR1BooIyzkl0OdN2ypzqSCRkjkT1pcN3NbSCW2fs3HioGPMYwfMVOXhLKPDcn+1UYjY4GKCxBLJNcPLKxd32LMeZJIoqFn9Q9D7iig//Z);
+
+	}
+	
+	@include bp( 'before', $milli ) {
+		padding-top: $caesura + $c-header;
+		padding-bottom: $caesura + $border--m;
+	}
+	
+	@include bp( 'between', $milli, $deci ) {
+		padding-top: $c-header + $caesura + $h_squiggle + $caesura;
+		padding-bottom: $caesura + .5*$h_squiggle + $caesura + $echo /* .m-alpha__title */ + $caesura;
+	}
+	
+	@include bp( 'after', $deci ) {
+		margin-top: $c-header + 1.5*$space;
+		padding: .5*$caesura 0;
+	}
+	
+	@include bp( 'after', $kilo ) {
+		max-width: .75*$w__max;
+		margin-left: auto;
+		margin-right: auto;
+		border-width: $border--sm;
+		padding-left: $space;
+		padding-right: $space;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			border: $border--m solid rgba( 255, 255, 255, .5 );
+			border-left: none;
+			border-right: none;
+		}
+	}
+	
+	@include bp( 'after', $milli ) {
+		
+		background-image: url( /writingAssets/doormageddon/_img/alpha--m.jpg );
+		
+		&:before {
+		    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/2wBDABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoXHh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQED/2wBDAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAAUAB4DASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIEBQP/xAAoEAACAgEDAgQHAAAAAAAAAAABAgMRAAQSIVGREzGhsQUyQWFxcsH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aw52+YckWbs3fOSvNIeNxA6Ake2PJMrlqsUzDsSM5x6qKFWB08U7sbV5gXCgCqCAgXfNk/bAXbNINsau7edIGY9ls5FK7g1bdyP7mppvjUWnm3+AkF1cukQI4A5ra7MpB9My9ZqV1GplmUELI5YA1fPWqF/XAvRbMn7t7nJGiUBiCQdzeX5wwwOIW7sn0xfDHU4YYH//Z);
+		}
+	}
+	
+	@include bp( 'after', $deci ) {
+		background-image: url( /writingAssets/doormageddon/_img/alpha--lg.jpg );
+		
+		&:before {
+		    background-image: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAASABIAAD/2wBDABALCwsMCxAMDBAXDw0PFxsUEBAUGx8XFxcXFx8eFxoaGhoXHh4jJSclIx4vLzMzLy9AQEBAQEBAQEBAQEBAQED/2wBDAREPDxETERUSEhUUERQRFBoUFhYUGiYaGhwaGiYwIx4eHh4jMCsuJycnLis1NTAwNTVAQD9AQEBAQEBAQEBAQED/wAARCAAOAB4DASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAABAUBAgP/xAAmEAACAQMEAQMFAAAAAAAAAAABAgMABBESITFBEwUUIlFTcYGS/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/EABQRAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhEDEQA/AEU7tlvkeT2fr+awit7261e2jklCbMQ2Ap5wSzAVGZWL6iDh2H6ztQrO7qY8nQSSU1EKSNskDnigZQ+l3juVumazj+67a1yeB8HpTdCSCZ4TIS0bFSQzYOOxv3V4Zru2cPbSeIjjB1D+WBFDyeeV2kkbU7kszE7knnqg/9k=);
+
+		}
+	}
+
+}
+
+.m-alpha {
+	position: relative;
+	
+	@include bp( 'before', $milli ) {
+		@include _decoration(
+			squareB,
+			false,
+			-$buffer,
+			0,
+			-4*$space,
+			-1.5*$space,
+			0
+		);
+	}
+	
+	@include bp( 'between', $milli, $deci ) {
+		
+		@include _decoration(
+			squareB,	
+			true,
+			-.5*$space,
+			15%,
+			-2.5*$space,
+			5%,
+			1
+		);
+	}
+	
+	@include bp( 'after', $deci ) {
+		
+		@include _decoration(
+			squareB,
+			false,
+			-1.5*$space,
+			15%,
+			-6*$space,
+			5%,
+			1
+		);
+		
+	}
+}
+
+.m-alpha__titleWrap {
+	position: relative;
+	z-index: 1;
+	
+	@include bp( 'between', $milli, $deci ) {
+		
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			background: url( "/writingAssets/doormageddon/_svg/decorations.svg#squiggleSquared" ) 0 0 repeat;
+			height: $h_squiggle;
+			width: $w__squiggle;
+			left: 50%;
+			margin-left: -.5*$w__squiggle
+		}
+		
+		&:before {
+			top: -$caesura;
+			margin-top: -.5*$h_squiggle;
+		}
+		
+		&:after {
+			bottom: -$caesura;
+			margin-bottom: -.5*$h_squiggle;
+		}
+	}
+	
+}
+
+.m-alpha__title {
+	font-family: $font--1;	
+	text-align: center;
+	color: $white;
+	text-shadow:
+		.25*$buffer .25*$buffer 0 $black,
+		-#{ .25*$buffer } -#{ .25*$buffer } $c--1;
+	word-break: break-all;
+	text-transform: uppercase;
+	position: relative;
+	
+	@include bp( 'before', $milli ) {
+		font-size: 35vw; // magic
+		line-height: 27.5vw; // magic
+		top: -.05em; // magic
+	}
+	
+	@include bp( 'after', $milli ) {
+		font-size: 15vw;
+		line-height: 1;
+		top: -2.25vw; // magic
+				
+		span { 
+		
+			&:first-child {
+				font-size: 1.95em;
+				display: block;
+			}
+			
+		}
+		
+	}
+	
+	@include bp( 'after', $kilo ) {
+		font-size: 7.6rem;
+		top: -1rem; //magic
+		
+		span {
+			
+			&:first-child {
+				font-size: 1.95em;
+			}
+		}
+	}
+	
+}

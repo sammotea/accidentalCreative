@@ -1,0 +1,250 @@
+@import url("https://use.typekit.net/wcl1yjt.css");
+@import '../_mixins';
+
+$space : 1.5rem;
+$buffer : .75*$space;
+
+$c--bg 		: 	#fafafa;
+$c--checker	:	#f8f8f8;
+$c--text 	: 	#333;
+
+$rem		:	21px;
+$omega		:	.8rem;
+$alpha		:	1rem;
+$bravo		:	1.6rem;
+$charlie	:	#{ 1.6 * 1.6 }rem;
+
+$f--1		:	ff-tisa-sans-web-pro, sans-serif;
+$f--2		:	prenton-display, sans-serif;
+$f--2a		:	prenton, sans-serif; // for variants
+
+$bp--1		: 	34rem;
+
+.pageWrapper {
+	-webkit-font-smoothing: antialiased;
+	background: $c--bg;
+	padding: $buffer;
+	position: relative;
+    min-height: 100vh;
+	height: 100%;
+    @include _font--body;
+	color: #333;
+	
+	@include bp( 'after', $bp--1 ) {
+		padding: $space 2*$space;
+	}
+
+	> * { 
+		max-width: 22rem;
+	}
+
+}
+
+.l_module {
+    & + & {
+        margin-top: $space;
+    }    
+}
+
+.link {
+    font-weight: 500;
+	display: inline-block;
+	position: relative;
+	
+	&:before,
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: -2px;
+		border-bottom: 1px solid $c--text;
+	}
+	
+	&:before {
+		opacity: .125;
+	}
+	
+	&:after {
+		left: 50%;
+		right: 50%;
+		transition: linear .1s;
+	}
+	
+	&:hover, &:active {
+		
+		&:after {
+			left: 0;
+			right: 0;
+		}
+	}
+}
+
+.title {
+	@include _font--title();	
+	
+	&Highlight { 
+		font-family: $f--2a;
+		font-weight: 400;
+	}
+}
+
+.titleHighlight {
+    font-family: $f--2a;
+	font-weight: 400;
+}
+
+.subtitle {
+    @include _font--subtitle();
+
+    + * {
+        margin-top: .5*$space;
+    }
+}
+
+.descItem {
+    list-style: none;
+    font-weight: 300;
+
+    &:before {
+        content: '# ';
+        font-weight: 500;
+		top: -0.075em;
+		position: relative;
+    }
+
+	&:after {
+		content: ';';
+	}
+
+	&:last-of-type:after {
+		content: '.';
+	}
+
+    & + & {
+        margin-top: .25*$space;
+    }
+}
+
+.summaryWrap {
+
+}
+
+.contactWrap {
+    @include separation--flourish( $space, $c--text);
+}
+
+.contactWrap,
+.projectsWrap {
+    font-size: $omega;
+
+	& + & {
+		margin-top: 1.5*$space;
+	}
+}
+
+.contactLink span{
+    &:after {
+		content: attr(data-name) "@" attr(data-dom) "." attr(data-tld);
+	}
+}
+
+.projects {
+	//padding-left: .5*$space;
+}
+.projectList {
+	list-style: none;
+}
+
+.projectListItem {
+	& + & {
+margin-top: .5*$space;
+	}
+}
+
+.projectListItem--category {
+	padding: .5*$space 0;
+	padding-bottom: .75*$space;
+	padding-right: .5*$buffer;
+	position: relative;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: -.5*$buffer;
+		background: #efefef;		
+	}
+
+	@include bp( 'after', $bp--1 ) {
+		padding-right: $space;
+		&:before { left: -$space; }
+	}
+}
+
+.projectCategory {
+	font-size: $omega;
+	text-transform: lowercase;
+	font-weight: 500;
+	font-variant: small-caps;
+	color: transparentize($c--text, .5);
+	display: block;
+	margin-bottom: .25*$space;
+	position: relative;
+}
+
+.projectCategoryList {
+	position: relative;
+	z-index: 1;
+}
+
+.projectCategoryListItem {
+
+}
+
+.projectLink {
+	font-weight: 500;
+}
+
+.projectLink--post {
+}
+
+
+.projectLink--flattenedPost {
+	span {
+		&:after {
+		content: '…';
+	}}
+}
+
+
+.projectLink--externalLink {
+	
+	span {
+		position: relative;
+	
+		&:after {
+			content: '';
+			display: inline-block;
+			background:  url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDMxOS41MiAzMTkuNTQiPjxkZWZzPjxzdHlsZT4uZHtmaWxsOiMzMzM7fTwvc3R5bGU+PC9kZWZzPjxnIGlkPSJhIi8+PGcgaWQ9ImIiPjxnIGlkPSJjIj48Zz48cGF0aCBjbGFzcz0iZCIgZD0iTTI2NC43OSwxOTkuOTVoMzkuNzh2MTE5LjU5SDBWMTkuOTlIMTE5LjUzVjU5LjYxSDM5Ljg2djIyMC4wNGgyMjQuOTN2LTc5LjcxWiIvPjxwYXRoIGNsYXNzPSJkIiBkPSJNMjUwLjU5LDM5Ljc1aC03MC41NlYwaDEzOS40OVYxMzkuNDhoLTM5LjU2VjY4LjUybC0uNjEtLjMyYy00Ni4zNyw0Ni41Ny05Mi43NSw5My4xNC0xMzguOTksMTM5LjU4LTkuNjYtOS42Ni0xOC44OS0xOC45LTI4LjU3LTI4LjU5LDIzLjA4LTIzLjAxLDQ2LjQ0LTQ2LjE1LDY5LjYzLTY5LjQ2LDIzLjE2LTIzLjI2LDQ2LjE1LTQ2LjY5LDY5LjE2LTY5Ljk5WiIvPjwvZz48L2c+PC9nPjwvc3ZnPg==')
+          no-repeat center;
+		  background-size: contain;
+			width: .5em;
+			height: .5em;
+			vertical-align: super;
+			margin-left: .25em;
+		}
+	}
+}
+
+.projectDate {
+	&:before {
+		content: '(';
+	}
+
+	&:after {
+		content: ')';
+	}
+}

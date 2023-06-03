@@ -1,0 +1,53 @@
+.m-echo__gallery {
+	
+	@include bp( 'before', $milli ) {
+		
+		@include _decoration(
+			triangleA,
+			false,
+			-3*$space,
+			5%,
+			5%,
+			-15%,
+			-1,
+		);
+	}
+	
+	@include bp( 'after', $milli ) {
+		
+		@include _decoration(
+			triangleB,
+			false,
+			-$space,
+			10%,
+			-$space,
+			-15%,
+		);
+	
+	}
+	
+	@include bp( 'between', $milli, $centi ) {
+		@include _horizontigallery__gallery( offset, right );
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		@include _horizontigallery__gallery( centered--a, right );
+	}
+	
+
+	@include bp( 'after', $deci ) {
+		@include _horizontigallery__gallery( centered--b, right );
+	}
+}
+
+.m-echo__imgWrap {
+
+	@include bp( 'before', $milli ) {
+		@include _vertigallery__imgWrap();
+	}
+	
+	@include bp( 'after', $milli ) {
+		@include _horizontigallery__imgWrap( right );
+	}
+	
+}

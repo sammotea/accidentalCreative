@@ -1,0 +1,22 @@
+export const transforms = {
+    XFOOTNOTE: [
+        "England had much more reliable data-collection than the UK as a whole. January was the peak of the second wave of infections, a high point for national testing, and before widespread vaccinations muddied the severity waters.",
+
+        "Some of these individuals were tested by their employer.",
+
+        "<a href='https://spiral.imperial.ac.uk/bitstream/10044/1/85703/10/react1_r8_full_preprint_1.1.pdf' target='_blank'>REACT</a> estimated 15.7 cases / thousand vs <a href='https://coronavirus.data.gov.uk/details/cases' target='_blank'>11.3</a>. <a href='https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/coronaviruscovid19infectionsurveydata/2021/covid19infectionsurveydatasets20211210england1.xlsx' target='_blank'>CIS</a> estimated 17.7 (average from 10–30 Jan) vs <a href='https://coronavirus.data.gov.uk/details/cases' target='_blank'>11.2</a>.",
+
+        "I <em>believe</em> official statistics for hospital admissions and deaths are accurate. I <em>think</em> there exists an enormous, rickety, horribly-difficult-to-change-in-the-best-of-times system of dependencies which <em>need</em> them to be true (e.g. NHS funding, insurance, voting?, and so on).",
+
+        "Some caught it in hospital. Some never went, but should have. Some were entirely failed by our care systems and were invisible. I’ve simplified by pretending these groups cancel out",
+
+        "On average a person died <a href='https://www.icnarc.org/our-audit/audits/cmp/reports' target='_blank'>12 days after hospitalisation</a>. My death counts are for 12/01–11/02.",
+
+        "I’ve assumed overlap between metabolic syndrome (obesity, diabetes, hypertension) and cardiovascular problems.",
+
+        "10:1 for your age group * ( 20% / 80% ) for your health.",
+
+        "<a href='https://www.icnarc.org/our-audit/audits/cmp/reports' target='_blank'>1,200 ICU admissions</a> of the <a href='https://docs.google.com/spreadsheets/d/1wjucMoNfyz8ZnpGzA6RyaCm4fBnUb89d666k77uEWuc/edit#gid=965105398' target='_blank'>10,000 January hospital admissions for your age group</a>. Most of those were not severely unhealthy before admission but I couldn’t tell you how many were in perfect health.",
+    ],
+    XIMAGE: ["hospitalisationRisk.png", "deathRisk.png"],
+};

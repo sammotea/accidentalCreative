@@ -1,0 +1,53 @@
+.m-foxtrot__gallery {
+	
+	@include bp( 'before', $milli ) {
+		@include _decoration(
+			squareB,
+			true,
+			-$space,
+			0,
+			0,
+			-10%,
+			-1,
+			210
+		);
+	}
+	
+	@include bp( 'after', $milli ) {
+		
+		@include _decoration(
+			squareB,
+			true,
+			-.5*$space,
+			5%,
+			-.5*$space,
+			0
+			
+		);
+	}
+	
+	@include bp( 'after', $centi ) {
+		
+		&:before {
+			@include rotate( 20deg );
+		}
+	}
+}
+
+.m-foxtrot__imgWrap{
+	width: calc( 41% - #{ $gallery__space / 2 }  );
+	
+	&:nth-child( 1 ),
+	&:nth-child( 4 ) {
+		width: calc( 58% - #{ $gallery__space / 2 }  );
+	}
+	
+	&:nth-child( 2 ) {
+		@include align_self( flex-end );
+	}
+	&:nth-child( 2 ) {
+		margin-top: 0;
+	}
+
+	
+}

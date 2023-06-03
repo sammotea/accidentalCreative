@@ -1,0 +1,157 @@
+.m-india__gallery {
+	
+	.m-india__sectionette:nth-child( 2 ) & {
+		
+		@include bp( 'before', $milli ) {
+			@include _decoration(
+				triangleA,
+				false,
+				$space,
+				10%,
+				1*$space,
+				-15%,
+				-1,
+				0
+			);
+		}
+		
+		@include bp( 'after', $milli ) {
+
+ 			@include _decoration(
+				triangleB,
+				true,
+				-$space,
+				10%,
+				$buffer,
+				-5%,
+			);
+		}
+	}
+	
+	.m-india__sectionette:nth-child( 4 ) & {
+		
+		@include bp( 'before', $milli ) {
+			@include _decoration(
+				triangleA,
+				true,
+				-$space,
+				-$space,
+				0,
+				-10%,
+			);
+		}
+		
+		@include bp( 'after', $milli ) {
+			
+			@include _decoration(
+				squareA,
+				false,
+				-2*$space,
+				25%,
+				-$space,
+				-15%,
+				
+			);
+		}
+	}
+	
+	.m-india__sectionette:nth-child( 6 ) & {		
+		@include _decoration(
+			triangleA,
+			false,
+			-$space,
+			10%,
+			.25*$space,
+			5%,
+			-1,
+			10
+		);
+	}
+	
+	@include bp( 'between', $milli, $centi ) {
+
+		.m-india__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__gallery( offset, right );
+		}
+		
+		.m-india__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__gallery( offset, left );
+		}
+
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		
+		.m-india__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__gallery( centered--a, right );
+		}
+		
+		.m-india__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__gallery( centered--a, left );
+		}
+
+	}
+	
+
+	@include bp( 'after', $deci ) {
+		
+		.m-india__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__gallery( centered--b, right );
+		}
+		
+		.m-india__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__gallery( centered--b, left );
+		}
+
+	}
+	
+}
+
+.m-india__imgWrap {
+
+	@include bp( 'before', $milli ) {
+		@include _vertigallery__imgWrap();
+		
+		.m-india__sectionette:nth-child( 4 ) & {
+			
+			&:nth-child( 3 ) {
+			}
+		}
+		
+	}
+
+	@include bp( 'after', $milli ) {
+				
+		.m-india__sectionette:nth-child( 2 ) & {
+			@include _horizontigallery__imgWrap( right );				
+		}
+		
+		// Opposites
+		.m-india__sectionette:nth-child( 4 ) & {
+			@include _horizontigallery__imgWrap( left );	
+			
+				
+		}
+	}
+	
+	.m-india__sectionette:nth-child( 6 ) & {
+				
+		width: calc( 41% - #{ $gallery__space / 2 } );
+		
+		&:nth-child( 2 ) {
+			margin-top: 0;
+			@include align_self( flex-end );
+		}
+		
+		&:nth-child( 3 ) {
+			@include align_self( flex-start );
+		}
+		
+		&:nth-child( 1 ),
+		&:nth-child( 4 ) {
+			width: calc( 58% - #{ $gallery__space / 2 } );
+		}
+				
+	}
+	
+}

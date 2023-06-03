@@ -1,0 +1,58 @@
+@mixin bp( $where, $bp, $bp2 : '' ) {
+    
+    @if $where == 'before' {
+        @media( max-width: #{$bp - .001rem} ) { @content }  
+    }
+    @else if $where == 'after' {
+        @media( min-width: $bp ) { @content }
+    }
+    @else if $where == 'between' {
+        @media( min-width: $bp ) and ( max-width: #{ $bp2 - .001rem } ) { @content }
+        }
+    
+}
+
+@mixin	_font--body() {
+	font: 300 1rem / 1.35 $f--1;
+}
+
+@mixin _font--title() {
+	font: 300 $charlie / 1.25 $f--2;
+}
+
+@mixin _font--subtitle() {
+	font-weight: 800;
+	font-size: $omega;
+	text-transform: uppercase;
+}
+
+@mixin separation--flourish( $space, $colour ) {
+    margin-top: 1.5*$space !important;
+	padding-top: 1.5*$space !important;
+	position: relative;
+		
+		&:before,
+		&:after { 
+			content: '';
+			position: absolute;
+			top: 0;
+			border: 1px solid $colour;
+		}
+		
+		&:before {
+			left: 0;
+			width:  6rem;
+			border-left: 0;
+			border-right: 0;
+			height: .125*$space;
+			transform :translate3d( 0, -50%, 0 );
+		}
+		
+		&:after {
+			left: 3rem;
+			height: .375*$space;
+			width: .125*$space;
+			border-width: 0 1px;
+			transform :translate3d( -50%, -50%, 0 ) rotate( 45deg );
+		}
+}

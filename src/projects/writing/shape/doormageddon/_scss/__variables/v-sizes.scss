@@ -1,0 +1,18 @@
+$c-header__text	:	$alpha;
+$c-header		:	( $border--sm  + $border--m /* interstitial style */ ) + ( $alpha  /* text line-height */ ) + $buffer /* actual spacing above */;
+
+$break__height 	: $space;
+
+$inset--a	:	25%;
+$inset--b	:	20%;
+$inset--c	:	33.3%;
+
+$gallery__space	:	.75*$space;
+
+$w__max		:	70rem;
+$w__text	:	26rem;
+
+$w__squiggleMax	:	$w__text;
+$w__squiggle	:	12rem;
+
+$h_squiggle		:	.5*$space;

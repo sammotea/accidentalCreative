@@ -1,0 +1,124 @@
+.m-lima__sectionette {
+	text-align: center;
+	
+	@include bp( 'between', $milli, $centi ) {
+		text-align: left;
+	}
+
+	p { 
+		font-size: $bravo !important;
+				
+		@include bp( 'after', $deci ) {
+			font-size: $charlie !important;
+		}
+		
+	}
+	
+	&:nth-child( 1 ) {
+	
+		p {
+			
+			&, &:nth-child( 1 ) { // overwrite lede style. Soz.
+				@include _text--standout(); // todo : separate textstandout styles from font
+				
+			}
+			
+			&:nth-child( 1 ) {
+				font-weight: 800;
+			}
+			
+		}
+		
+	}
+	
+	&:nth-child( 3 ) {
+		position: relative;
+		padding-top: $caesura + $h_squiggle;
+		padding-bottom: $caesura + $h_squiggle;
+		
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			background: url( "/writingAssets/doormageddon/_svg/decorations.svg#squiggle" ) center center repeat;
+			width: $w__squiggle;
+			left: 50%;
+			margin-left: -.5*$w__squiggle;
+			height: $h_squiggle;
+		}
+		
+		&:before { top: 0; }
+		&:after { bottom: 0; }
+		
+		p {
+			@include _text--standout(); // todo : separate textstandout styles from font
+			font-size: $delta !important;
+		}
+		
+		@include bp( 'between', $milli, $centi ) {
+			padding: 0;
+			&:before,
+			&:after { content: none; }
+			
+			p {
+				font-size: $echo !important;
+			}
+		}
+		
+		
+		
+	}
+}
+
+.m-lima__gallery {
+	
+	@include bp( 'before', $milli ) {
+		
+		@include _decoration(
+			triangleA,
+			false,
+			$space,
+			5%,
+			20%,
+			-15%,
+			-1,
+		);
+	}
+	
+	@include bp( 'after', $milli ) {
+		
+		@include _decoration(
+			triangleB,
+			false,
+			-$space,
+			10%,
+			-$space,
+			-15%,
+		);
+	
+	}
+	
+	@include bp( 'between', $milli, $centi ) {
+		@include _horizontigallery__gallery( offset, right );
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		@include _horizontigallery__gallery( centered--a, right );
+	}
+	
+
+	@include bp( 'after', $deci ) {
+		@include _horizontigallery__gallery( centered--b, right );
+	}
+}
+
+.m-lima__imgWrap {
+
+	@include bp( 'before', $milli ) {
+		@include _vertigallery__imgWrap();
+	}
+	
+	@include bp( 'after', $milli ) {
+		@include _horizontigallery__imgWrap( right );
+	}
+	
+}

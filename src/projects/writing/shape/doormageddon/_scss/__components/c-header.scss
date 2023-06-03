@@ -1,0 +1,49 @@
+.c-headerWrap {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	
+	@include bp( 'before', $deci ) {
+		color: $white;
+	}
+}
+
+.c-header {
+	padding-top: $c-header - $c-header__text;
+	font-size: $c-header__text;
+	line-height: $c-header__text;
+}
+
+.c-header__menu {
+	list-style: none;
+	@include flex();
+	@include justify_content( center );
+}
+
+.c-header__menuItem {
+	width: percentage( $half );
+	
+	&:first-child {
+		text-align: right;
+		padding-right: $buffer;
+	}
+	
+	& + & {
+		padding-left: $buffer;
+		border-left: 1px $t--3 solid;
+	}
+	
+}
+
+.c-header__menuLink {
+	font-family: $font--2;
+	text-decoration: underline;
+}
+
+.c-header__contactLink {
+	span:after {
+		content: 'Email me';
+	}
+}

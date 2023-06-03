@@ -1,0 +1,65 @@
+.l-sectionWrap {
+	padding-left: $buffer;
+	padding-right: $buffer;
+	position: relative;
+
+	& + & {
+		margin-top: $caesura;
+	}
+	
+	&:not( .m-alphaWrap ):not( .c-interstitialWrap ):not( .m-mikeWrap ) + & {
+		
+		margin-top: $caesura;
+		
+		&:not( .c-interstitialWrap ):not( .m-mikeWrap ) {
+			padding-top: $caesura + $h_squiggle;
+			
+			&:after {
+				content: '';
+				position: absolute;
+				background: url( "/writingAssets/doormageddon/_svg/decorations.svg#squiggle" ) center center repeat;
+				width: $w__squiggleMax;
+				top: 0;
+				width: $w__squiggle;
+				left: 50%;
+				margin-left: -.5*$w__squiggle;
+				height: $h_squiggle;
+				
+				@include bp( 'between', $milli, $centi ) {
+					left: calc( #{ $inset--a / 100% } * ( 100% - #{ $buffer } ) + #{ $buffer } );
+					margin-left: 0;
+				}
+			}
+		}
+		
+	}
+	
+	/***
+	****	Play for space and keep things
+	****	readable.
+	***/
+	
+	@include bp( 'between', $micro, $milli ) {
+	
+		&:not( .m-alphaWrap ):not( .c-interstitialWrap ) {
+			padding-left: 1.5*$space;
+			padding-right: 1.5*$space;
+		}
+	
+	}
+	
+}
+
+.l-sectionette {
+	width: 100%;
+	
+	& + & {	
+		margin-top: $space;
+		
+		@include bp( 'after', $milli ) {
+			margin-top: $caesura;
+		}
+	}
+
+	
+}

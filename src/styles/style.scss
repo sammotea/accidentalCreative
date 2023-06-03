@@ -1,0 +1,18 @@
+@import '_reset.scss';
+
+.s-home {
+    font-size: 20px;
+}
+
+.s-designFlavour--doormageddon {
+    font-size: 18px;
+    overflow-x: hidden;
+
+    body {
+        overflow: hidden;
+    }
+}
+
+.s-designFlavour--covid {
+    font-size: 18px;
+}

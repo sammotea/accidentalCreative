@@ -1,0 +1,87 @@
+.b-title {
+	font-family: $font--2;
+	font-weight: 800;
+
+	& + &,
+	& + p,
+	& + ul,
+	& + ol {
+		margin-top: .5*$space;
+	}
+}
+
+
+
+.b-title--section {
+	font-size: $bravo;
+	counter-increment: b-title--section;
+	position: relative;
+	text-transform: uppercase;
+	
+	&:before {
+		content: '0' counter( b-title--section ) " /";
+		font-weight: 300;
+		z-index: 1;
+	}
+	
+	@include bp( 'after', $milli ) {
+		
+		&:before,
+		&:after {
+			position: absolute;
+		}
+		
+		&:before {
+			content: '0' counter( b-title--section );
+			background: $white;
+			padding-right: .5*$buffer;
+			margin-top: -.05em; // magic, due to font
+		}
+		
+		&:after {
+			content: '';
+			top: 50%;
+			border-top: 1px $black solid;
+		}
+	}	
+	
+	@include bp( 'between', $milli, $centi ) {
+		padding-left: $inset--a;
+		
+		&:before,
+		&:after {
+			left: .5*$inset--a;
+		}
+		
+		
+		&:after {
+			right: calc( 100% - #{ $inset--a } + #{ .5*$buffer } );
+		}
+		
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		padding-left: $inset--b;
+		
+		&:before {
+			position: relative;
+			content: '0' counter( b-title--section ) " /";
+			padding: 0;
+		}
+	}
+	
+	@include bp( 'after', $deci ) {
+		width: $w__text;
+		margin-left: auto;
+		margin-right: auto;
+		
+		&:after {
+			right: calc( 100% + #{ $buffer } );
+		}
+		
+		&:before,
+		&:after {
+			left: -( ( ( .5 * $inset--c ) / 100% ) * $w__text );
+		}
+	}
+}

@@ -1,0 +1,34 @@
+.c-gallery {
+	@include flex();
+	@include flex_wrap( wrap );
+	@include justify_content( space-between );
+	@include align_items( flex-start );
+	position: relative;
+	
+	&:before { // Background decoration
+		content: '';
+		position: absolute;
+		z-index: -1;
+	}
+	
+	@include bp( 'between', $milli, $centi ) {
+		 margin-left: .5*$inset--a;
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		margin-left: .5*$inset--b;
+		margin-right: .5*$inset--b;
+	}
+	
+	@include bp( 'after', $deci ) {
+		margin-left: auto;
+		margin-right: auto;
+		width: ( ( 100% + 2*$inset--c ) / 100% ) * $w__text; 
+	}
+}
+
+.c-gallery__imgWrap {
+	margin-top: $gallery__space;
+	
+	&:first-child { margin-top: 0; }
+}

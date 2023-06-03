@@ -1,0 +1,376 @@
+@import '__scssmixins';
+@import '_mixins';
+@import 'https://use.typekit.net/qxa7czp.css';
+
+$space 		    : 	2rem;
+
+$c--1		    :	rgba(163, 223, 230, 0.5);
+$c--2		    :	#f5996e;
+$c--black	    :	black;
+$c--text	    :	#444;
+
+$bp--1		    :	60rem;
+$bp--2 		    : 	60rem;
+
+$bound          : 	30rem;
+$bound--decL    :   12rem;
+$bound--decS    :   2rem;
+
+$omega		    :	.85rem;
+$alpha          :   1rem;
+$bravo          :   1.6rem;
+$charlie        :   $bravo * 1.6;
+$delta          :   $charlie * 1.6;
+
+$sidebarWidth   :   14rem;
+
+@mixin lineBreak() {
+    position: relative;
+    margin-top: $space;
+    padding-top: $space;
+
+    &:before {
+        content: '';
+        position:absolute;
+        border-top: 2px solid $c--2;
+        left: 0;
+        top: 0;
+        width: $bound--decS;
+    }
+}
+
+@mixin sectionBreak() {
+    position: relative;
+    margin-top: $space + .25rem;
+    padding-top: $space  + .25rem;
+
+    &:before,
+		&:after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: .5rem;
+			top: 0;
+			left: 0;
+			
+			@include bp( 'after', $bp--2 ) {
+				max-width: 30rem + $space;
+				left: -.5*$space;
+			}
+		}
+		
+		&:before {
+			border-width: 1px 0;
+			border-color: $c--black;
+			border-style: solid;
+		}
+		
+		&:after {
+			background: $c--1;
+			margin-left: -.5rem;
+			margin-top: .25rem;
+			z-index: -1;
+		}
+}
+
+@mixin heading2 {
+    font-variant: small-caps;
+    margin-bottom: .5*$space;
+    font-size: $bravo;
+}
+
+.header {
+    margin-bottom: $space;
+}
+
+.headerLink {
+    display: inline-block;
+    line-height: 2rem;
+
+    & + & {
+        margin-left: 1*$space;
+        position: relative;
+
+        &:active,
+        &:hover,
+        &:focus {
+            &:before {
+                color: $c--text;
+            }
+        }
+        &:before {
+            content: '/';
+            position: absolute;
+            left: -.5*$space;
+            transform: translate3d( -50%, 0, 0 );
+            transition: none;
+        }
+    }
+
+}
+
+.headerLink--contact {
+    &:after {
+        content: 'Email me';
+    }
+}
+
+.covidPost {
+    font: 300 1rem / 1.6 'prenton';
+	color: $c--text;
+    position: relative;
+    z-index: 1;
+    padding: $space;
+    
+    @include bp( 'after', $bp--1 ) {
+        padding-left: $sidebarWidth + 2*$space;
+    }
+
+    h1, h2, h3, h4 {
+        font-family: 'prenton';
+	    font-weight: 700;
+        line-height: 1.2;
+        color: $c--black;	
+        
+    }
+
+    a {
+        display: inline;
+        position: relative;
+        transition: linear .1s;
+        box-decoration-break: clone;
+        box-shadow: 0 1px 0 $c--black;
+
+        
+        &:hover, &:active {
+            color: $c--2;
+            box-shadow: 0 1px 0 $c--2;
+        }
+    }
+
+    p, blockquote, aside, ol, ul, h3, h4 {
+
+        & + p,
+        & + blockquote,
+        & + aside,
+        & + ol, 
+        & + ul,
+        & + h3,
+        & + h4 {
+            margin-top: .5*$space;
+        }
+    }
+
+    ul, ol {
+        list-style-position: inside;
+    }
+
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    blockquote {
+        font-style: italic;
+    }
+
+    :global {
+        .lineBreak {
+            @include lineBreak();
+        }
+    
+        .footnotesWrap {
+            @include sectionBreak();
+            max-width: $bound;
+    
+        }
+    
+        .footnote {
+            font-size: $omega;
+    
+            div { display: inline; }
+
+            & + .footnote {
+                margin-top: .5*$space;
+            }
+        }
+
+        .footnote__link {
+            color: $c--2;
+            box-shadow: none;
+
+            &:before,
+            &:after {
+                color: $c--text;
+            }
+
+            &:before {
+                content: ' [';
+            }
+
+            &:after {
+                content: ']';
+            }
+
+            &:active,
+            &:hover {
+                color: $c--text;
+                box-shadow: none;
+            }
+        }
+    
+        .footnote__returnLink {
+            box-shadow: none;
+
+            &:before { content: ' ';}
+        }
+
+        .postscriptsWrap {
+            @include sectionBreak();
+            max-width: $bound;
+        }
+
+        .postscripts__intro + .postscriptListWrap {
+            margin-top: .5*$space;
+        }
+
+        .postscriptListWrap + .postscriptListWrap {
+            margin-top: $space;
+        }
+        .postscripts__title {
+            @include heading2();
+        }
+
+        .postscript {
+            & + .postscript {
+                margin-top: .5*$space;
+            }
+        }
+
+        .postscript__org {
+            font-weight: 500;
+
+            // Assumes always followed by something
+            &:after {
+                content: ', ';
+                font-weight: 300;
+            }
+        }
+
+        .postscript__link {
+            font-style: italic;
+        }
+
+        .postscript__description {
+            
+            &:before {
+                content: ' / ';
+                
+            }
+        }
+
+        .sidebarWrap {
+            max-width: $bound;
+
+            @include bp( 'before', $bp--1 ) {
+                @include sectionBreak();
+
+                & + * {
+                    @include sectionBreak();
+                }
+            }
+
+            @include bp( 'after', $bp--1 ) {
+                position: absolute;
+                left: 0;
+                top: .5*$space - .6rem; // magic align with title
+                width: $sidebarWidth;
+                padding-right: $space;
+                padding-bottom: .5*$space;
+                padding-top: 2.5*$space + .6rem; // magic
+                border-right: 1px #eee solid;
+                text-align: right;
+            }
+        }
+
+        .sidebarIntro {
+            @include bp( 'before', $bp--1 ) {
+                display: none;
+            }
+        }
+
+        .sidebarNav {
+            @include bp( 'before', $bp--1 ) {
+                margin-top: .25*$space !important;
+            }
+        }
+        .sidebarTitle {
+            font-weight: 300;
+            font-size: $bravo;
+            line-height: 1.4;
+            
+            @include bp( 'after', $bp--1 ) {
+                font-style: italic;
+            }
+        }
+
+        .sidebarSection + .sidebarSection,
+        .sidebarList + .sidebarHeading  {
+            margin-top: $space;
+        }
+
+        .sidebarHeading + .sidebarList {
+            margin-top: .25*$space;
+        }
+
+        .sidebarList {
+            list-style: none;
+        }
+
+        .sidebarListItem + .sidebarListItem {
+            margin-top: .125*$space;
+        }
+
+        .sidebarListLink--current {
+            pointer-events: none;
+            cursor: pointer;
+            box-shadow: none;
+            color: $c--2;
+        }
+
+        
+    }
+}
+
+.title {
+    position: relative;
+    font-size: $charlie;
+    margin-bottom: $space;
+
+}
+
+.contentWrap {
+    max-width: $bound;
+
+    h2 {
+        @include heading2();
+        @include lineBreak();
+    }
+
+    * + h3,
+    * + h4 {
+        margin-top: 1*$space !important;
+    }
+
+    h3 {
+        font-size: $alpha;
+    }
+
+    h4 {
+        font-weight: 500;
+    }
+    
+
+    
+    
+}

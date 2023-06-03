@@ -1,0 +1,82 @@
+.c-interstitialWrap {
+	@include _interstitial();
+	position: relative;
+	padding: 0;
+	
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		@include _preImg();
+	}
+}
+
+.c-interstitial {
+	@include flex();
+	@include align_items( center );
+	@include justify_content( center );
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	@include _text--standout();
+	text-align: center;
+	
+	/***
+	****	Height defined by aesthetics,
+	****	not text.
+	***/
+	
+	&:after {
+		content: '';
+		display: block;
+	}
+	
+}
+
+.c-interstitial__inner {
+	margin: $space ( $buffer + .5*$buffer );
+	position: relative;
+	z-index: 1; // above _interstitial decoration
+}
+
+.c-interstitial__title {
+	text-transform: capitalize;
+}
+
+.c-interstitial__text {
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 1.3;
+	
+	@include bp( 'after', $milli ) {
+		font-size: $charlie;
+	}
+	
+	@include bp( 'after', $deci ) {
+		font-size: $delta;
+	}
+	
+	.c-interstitial__title + & {
+		margin-top: $buffer ;
+	}
+}
+
+.c-interstitial__text,
+.c-interstitial__title {
+	max-width: 15em;
+	
+	span {
+		display: inline;
+		background: $white;
+		box-decoration-break: clone;
+		box-shadow: 
+			.5*$buffer 0 0 0 $white,
+			( .5*$buffer + .2rem ) .2rem 0 0 $c--1,
+			-.5*$buffer 0 0 0 $white,
+			( -.5*$buffer ) .2rem 0 0 $c--1,
+	}
+}

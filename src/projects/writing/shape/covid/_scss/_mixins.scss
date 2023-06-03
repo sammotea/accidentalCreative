@@ -1,0 +1,146 @@
+@mixin _preImg() {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-color: $black;
+	filter: url( '/writingAssets/doormageddon/_svg/filters.svg#blur');
+	clip-path: inset( 0 0 0 0 ); // stop overflow;
+}
+
+@mixin _vertigallery__imgWrap() {
+	
+	width: calc( 50% - #{ ( $gallery__space ) / 2 } );
+		
+	&:nth-child( 2 ) { margin-top: 0; }
+	
+	&:nth-child( 3 ) { width: 100%; }
+		
+}
+
+@mixin _horizontigallery__gallery( $style, $pos : 'left' ) {
+	@include flex_direction( column );
+	
+	@if $style == 'offset' {
+	
+		@if $pos == 'left' {
+			margin-#{ $pos }: calc( #{ .5*$inset--a } + #{ ( $gallery__space ) / 2 } );
+		}
+		
+		@else {
+			margin-#{ $pos }: ( $gallery__space ) / 2;
+		}
+		
+	}
+	
+	@if $style == 'centered--a' {
+		margin-#{ $pos }: calc( #{ .5*$inset--b } + #{ ( $gallery__space ) / 2 } );
+	}
+	
+	@if $style == 'centered--b' {
+		width: calc( #{ ( ( 100% + 2*$inset--c ) / 100% ) } * #{ $w__text } + #{ ( $gallery__space ) / 2 } );
+		position: relative;
+		#{ $pos }: -#{ .5* ( ( $gallery__space ) / 2 ) };
+	}
+}
+
+@mixin _horizontigallery__imgWrap( $pos : 'left' ) {
+	width: calc( 33.3% - #{ ( $gallery__space ) / 2 } );
+	
+	&:nth-child( 3 ) {
+		@include order( 10 );
+		position: absolute;
+		width: calc( 66.6% );
+		top: 0%;
+		#{ $pos }: 0;
+		margin-top: 0;
+		
+		/***
+		****	Leaves a horizontal overflow
+		****	of ( $gallery__space / 2 ) so…
+		****	
+		****	Add padding-right on parent and translate
+		****	the nth-child(2)
+		***/
+		
+		@if $pos == 'left' {
+			@include translate3d( -#{( $gallery__space ) / 2 }, 0, 0 );
+		} @else {
+			@include translate3d( #{( $gallery__space ) / 2 }, 0, 0 );
+		}
+	}
+	
+	@if $pos == 'left' {
+		&:nth-child( -n + 2 ) {
+			margin-left: calc( 100% - ( 33.3% - #{ ( $gallery__space ) / 2 } ) );
+		}
+	}
+}
+
+@mixin _text--standout() {
+	font-family: $font--2;
+	font-weight: 100;
+	font-size: $charlie;
+	
+	@include bp( 'after', $centi ) {
+		font-size: $delta;
+	}
+	
+	@include bp( 'after', $deci ) {
+		font-size: $echo;
+	}
+}
+
+@mixin _interstitial() {
+	border: $border--sm $black solid;
+	border-left-width: 0;
+	border-right-width: 0;
+	
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		border-top: $border--m solid rgba( 255, 255, 255, .5 );
+		border-bottom: $border--m solid rgba( 255, 255, 255, .5 );
+	}
+	
+}
+
+@mixin _decoration(
+	$shape			: triangleA,
+	$is_inverted	: false,
+	$top			: 0,
+	$right			: 0,
+	$bottom			: 0,
+	$left			: 0,
+	$zindex			: -1,
+	$rotate			: false
+) {
+	
+	&:before {
+		content: '';
+		position: absolute;
+		
+		@if $is_inverted {
+			background-image: url( "/writingAssets/doormageddon/_svg/shapes.svg##{ $shape }--inverted" );
+		} @else {
+			background-image: url( "/writingAssets/doormageddon/_svg/shapes.svg##{ $shape }" );
+		}
+		
+		background-position: center center;
+		background-repeat: no-repeat;
+				top: $top;
+		right: $right;
+		bottom: $bottom;
+		left: $left;
+		z-index: $zindex;
+		
+		@if $rotate {
+			@include rotate( #{ $rotate }deg );
+		}
+		
+	}
+	
+}

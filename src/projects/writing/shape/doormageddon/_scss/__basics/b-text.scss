@@ -1,0 +1,84 @@
+.b-text {
+	margin-top: $buffer;
+	
+	@include bp( 'before', $centi ) {
+		max-width: 28rem;
+	}
+	
+	&:first-child {
+		margin-top: 0;
+	}
+	
+	@include bp( 'after', $milli ) {
+		font-size: $alpha * 1.1;
+	}
+	
+	// Lede style
+	.l-sectionette:first-child &:first-of-type {
+		
+		@include bp( 'after', $milli ) {
+			font-size: $bravo;
+		}
+		
+	}
+		
+	.l-sectionWrap:not( .m-alphaWrap ):not( .c-interstitialWrap ) & {
+		
+		@include bp( 'between', $milli, $centi ) {
+			margin-left: $inset--a;
+		}
+		
+		@include bp( 'between', $centi, $deci ) {
+			margin-left: $inset--b;
+			margin-right: $inset--b;
+		}
+		
+		@include bp( 'after', $deci ) {
+			width: $w__text;
+			box-sizing: border-box;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	
+}
+
+.b-pullquote {
+	@include _text--standout();
+	font-family: $font--2;
+	
+	&:not( ::first-line ) {
+		font-weight: 800;
+		
+	}
+	
+	@include bp( 'after', $centi ) {
+		text-align: center;
+	}
+	
+	@include bp( 'after', $deci ) {
+		font-size: $delta;
+	}
+	
+}
+
+.b-pullquote__l1,
+.b-pullquote__l2 {
+	display: block;
+}
+
+.b-pullquote__l1 {
+	
+	@include bp( 'between', $milli, $centi ) {
+		margin-left: percentage( -( .5*$inset--a )  / ( 100% - $inset--a ) );
+	}
+	
+}
+
+.b-pullquote__l2 {
+	font-weight: 600;
+	
+	@include bp( 'between', $micro, $milli ) {
+		text-indent: $space;
+	}
+}

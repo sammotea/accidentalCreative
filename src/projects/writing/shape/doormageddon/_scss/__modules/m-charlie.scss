@@ -1,0 +1,115 @@
+.m-charlie__imgWrap--solo {
+	position: relative;
+	width: auto;
+	margin-bottom: -#{ .25*$buffer /* account for img decoration */ + .25*$buffer /* magic */ };
+	
+	@include bp( 'between', $milli, $centi ) {
+		margin-left: .5*$inset--a;
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		margin-left: $inset--b;
+		margin-right: $inset--b;
+	}
+	
+	@include bp( 'after', $deci ) {
+		margin-left: auto;
+		margin-right: auto;
+		width: ( ( 100% + $inset--c ) / 100% ) * $w__text; 
+	}
+}
+
+.m-charlie__gallery {
+	
+	@include bp( 'before', $milli ) {
+		padding-bottom: calc( .5 * ( 50% - #{.75*$buffer} )); // for offset image style
+		
+		@include _decoration(
+			squareB,
+			true,
+			5%,
+			-10%,
+			0,
+			-10%,
+			-1,
+			35
+		);
+		
+	}
+	
+	@include bp( 'between', $milli, $centi ) {
+
+		@include _decoration(
+			triangleB,
+			true,
+			-$buffer,
+			0,
+			-$space,
+			5%,
+			0,
+			125
+		);
+	}
+	
+	@include bp( 'between', $centi, $deci ) {
+		
+		@include _decoration(
+			squareB,
+			true,
+			$space,
+			-5%,
+			-3*$space,
+			-5%,
+			-1,
+			-10
+		);
+	}
+	
+	@include bp( 'after', $deci ) {
+		
+		@include _decoration(
+			triangleA,
+			true,
+			3*$space,
+			3*$space,
+			-3*$space,
+			-4*$space,
+			-1,
+			
+		);
+	}
+	
+}
+
+.m-charlie__imgWrap {
+	
+	.c-galleryWrap & {
+	
+		@include bp( 'before', $milli ) {
+			// EXPL: $gallery_space * $num_gaps / $images_in_row
+			width: calc( 50% - #{ $gallery__space / 2 } );
+			
+			&:nth-child( 2 ) {
+				margin-top: 0;
+			}
+			
+			&:nth-child( even ) {
+				@include translate3d( 0, 50%, 0 );
+			}
+			
+		}
+		
+		@include bp( 'after', $milli ) {
+			width: calc( 33.3% - #{ ( $gallery__space * 2 ) / 3 } );
+			position: relative;	
+			
+			&:nth-child( -n + 3 ) {
+				margin-top: 0;
+			}
+			
+		}
+		
+	}
+
+}
+
