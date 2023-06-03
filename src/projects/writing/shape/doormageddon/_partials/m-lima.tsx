@@ -1,34 +1,27 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonLima({ moduleStyles }) {
+const DoormageddonLima = () => {
     return (
         <section
-            className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-limaWrap"]
-            )}
+            className={classify(styles["l-sectionWrap"], styles["m-limaWrap"])}
         >
-            <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-lima"]
-                )}
-            >
+            <div className={classify(styles["l-section"], styles["m-lima"])}>
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-lima__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-lima__sectionette"]
                     )}
                 >
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Something was&hellip; missing.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Can a door be art? Piss <em>all the way</em> off.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Right, sure. Right. Okay. But what if it{" "}
                         <em>sparkles</em>?!
                     </p>
@@ -36,75 +29,75 @@ export default function DoormageddonLima({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-lima__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-lima__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-lima__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-lima__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-lima__gallery"]
+                                styles["c-gallery"],
+                                styles["m-lima__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-lima__imgWrap"],
-                                    moduleStyles["m-lima__imgWrap--1"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-lima__imgWrap"],
+                                    styles["m-lima__imgWrap--1"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-lima__img"],
-                                        moduleStyles["m-lima__img--1"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-lima__img"],
+                                        styles["m-lima__img--1"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-lima__imgWrap"],
-                                    moduleStyles["m-lima__imgWrap--2"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-lima__imgWrap"],
+                                    styles["m-lima__imgWrap--2"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-lima__img"],
-                                        moduleStyles["m-lima__img--2"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-lima__img"],
+                                        styles["m-lima__img--2"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-lima__imgWrap"],
-                                    moduleStyles["m-lima__imgWrap--3"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-lima__imgWrap"],
+                                    styles["m-lima__imgWrap--3"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-lima__img"],
-                                        moduleStyles["m-lima__img--3"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-lima__img"],
+                                        styles["m-lima__img--3"]
                                     )}
                                 ></div>
                             </div>
@@ -114,15 +107,17 @@ export default function DoormageddonLima({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-lima__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-lima__sectionette"]
                     )}
                 >
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Golly / <b>Art.</b>
                     </p>
                 </div>
             </div>
         </section>
     );
-}
+};
+
+export default DoormageddonLima;

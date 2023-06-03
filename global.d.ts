@@ -45,3 +45,6 @@ interface IPostscriptLink {
     description: string;
 }
 
+interface IStylesModule {
+        [key: string]: string;
+}

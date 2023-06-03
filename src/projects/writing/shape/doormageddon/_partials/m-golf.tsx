@@ -1,41 +1,34 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonGolf({ moduleStyles }) {
+const DoormageddonGolf = () => {
     return (
         <section
-            className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-golfWrap"]
-            )}
+            className={classify(styles["l-sectionWrap"], styles["m-golfWrap"])}
         >
-            <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-golf"]
-                )}
-            >
+            <div className={classify(styles["l-section"], styles["m-golf"])}>
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-golf__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-golf__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["b-titleWrap"],
-                            moduleStyles["m-golf__titleWrap"]
+                            styles["b-titleWrap"],
+                            styles["m-golf__titleWrap"]
                         )}
                     >
                         <h1
                             className={classify(
-                                moduleStyles["b-title"],
-                                moduleStyles["b-title--section"],
-                                moduleStyles["m-golf_title"]
+                                styles["b-title"],
+                                styles["b-title--section"],
+                                styles["m-golf_title"]
                             )}
                         >
                             <span
                                 className={classify(
-                                    moduleStyles["m-golf__titleText"]
+                                    styles["m-golf__titleText"]
                                 )}
                             >
                                 Have your cake and drop it
@@ -43,40 +36,32 @@ export default function DoormageddonGolf({ moduleStyles }) {
                         </h1>
                     </div>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         A well-fitted hinge lies flush. A flat, shallow
                         depression of a few millimetres is the ideal bed.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         An inch-deep crevasse because someone doesn’t know how
                         to use a chisel is not.
                     </p>
 
                     <p
                         className={classify(
-                            moduleStyles["b-text"],
-                            moduleStyles["b-pullquote"],
-                            moduleStyles["m-golf__pullquote"]
+                            styles["b-text"],
+                            styles["b-pullquote"],
+                            styles["m-golf__pullquote"]
                         )}
                     >
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l1"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l1"])}>
                             Defeat snatched from
                         </span>
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l2"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l2"])}>
                             the jaws of victory.
                         </span>
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Half a tube of glue and three sighs of woodfiller later
                         and my shame was concealed.
                     </p>
@@ -84,94 +69,94 @@ export default function DoormageddonGolf({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-golf__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-golf__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-golf__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-golf__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-golf__gallery"]
+                                styles["c-gallery"],
+                                styles["m-golf__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap--1"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-golf__imgWrap"],
+                                    styles["m-golf__imgWrap--1"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-golf__img"],
-                                        moduleStyles["m-golf__img--1"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-golf__img"],
+                                        styles["m-golf__img--1"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap--2"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-golf__imgWrap"],
+                                    styles["m-golf__imgWrap--2"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-golf__img"],
-                                        moduleStyles["m-golf__img--2"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-golf__img"],
+                                        styles["m-golf__img--2"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap--3"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-golf__imgWrap"],
+                                    styles["m-golf__imgWrap--3"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-golf__img"],
-                                        moduleStyles["m-golf__img--3"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-golf__img"],
+                                        styles["m-golf__img--3"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap"],
-                                    moduleStyles["m-golf__imgWrap--4"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-golf__imgWrap"],
+                                    styles["m-golf__imgWrap--4"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-golf__img"],
-                                        moduleStyles["m-golf__img--4"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-golf__img"],
+                                        styles["m-golf__img--4"]
                                     )}
                                 ></div>
                             </div>
@@ -181,4 +166,5 @@ export default function DoormageddonGolf({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+export default DoormageddonGolf;

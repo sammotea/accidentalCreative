@@ -2,9 +2,7 @@ import classify from "@/utils/classify";
 import { outputContactLink } from "@/utils/antiSpamFunctions";
 
 interface IProps {
-    styles: {
-        [key: string]: string;
-    };
+    styles: IStylesModule;
 }
 
 export const Header: React.FC<IProps> = ({ styles }) => {

@@ -24,9 +24,9 @@ export const IndexPage: React.FC<IProps> = ({
         <>
             <Head>{renderHead()}</Head>
             <PageWrapper className={styles.pageWrapper}>
-                <Summary styles={styles} />
-                <Contact styles={styles} />
-                <Projects styles={styles} projects={projects} />
+                <Summary />
+                <Contact />
+                <Projects projects={projects} />
             </PageWrapper>
         </>
     );

@@ -1,41 +1,34 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonIndia({ moduleStyles }) {
+const DoormageddonIndia = () => {
     return (
         <section
-            className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-indiaWrap"]
-            )}
+            className={classify(styles["l-sectionWrap"], styles["m-indiaWrap"])}
         >
-            <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-india"]
-                )}
-            >
+            <div className={classify(styles["l-section"], styles["m-india"])}>
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-india__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-india__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["b-titleWrap"],
-                            moduleStyles["m-india__titleWrap"]
+                            styles["b-titleWrap"],
+                            styles["m-india__titleWrap"]
                         )}
                     >
                         <h1
                             className={classify(
-                                moduleStyles["b-title"],
-                                moduleStyles["b-title--section"],
-                                moduleStyles["m-india_title"]
+                                styles["b-title"],
+                                styles["b-title--section"],
+                                styles["m-india_title"]
                             )}
                         >
                             <span
                                 className={classify(
-                                    moduleStyles["m-india__titleText"]
+                                    styles["m-india__titleText"]
                                 )}
                             >
                                 Star-spangled spanners
@@ -43,45 +36,37 @@ export default function DoormageddonIndia({ moduleStyles }) {
                         </h1>
                     </div>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Handles require holes, which in turn require a blade
                         spinning at all the Rs-per-M.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         To stray from center is immediate ruination. Pretty much
                         the only skill you need is to drill straight.
                     </p>
 
                     <p
                         className={classify(
-                            moduleStyles["b-text"],
-                            moduleStyles["b-pullquote"],
-                            moduleStyles["m-india__pullquote"]
+                            styles["b-text"],
+                            styles["b-pullquote"],
+                            styles["m-india__pullquote"]
                         )}
                     >
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l1"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l1"])}>
                             I did not have that skill.
                         </span>
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l2"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l2"])}>
                             When in doubt, go meta.
                         </span>
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         I couldn’t make a straight hole so I attempted a
                         straight-hole-maker.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         I began with toilet-, kitchen- and heavy-duty rolls of
                         different thickness, art supplies and pages of
                         measurements. A fever dream of unsurpassed genius
@@ -92,75 +77,75 @@ export default function DoormageddonIndia({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-india__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-india__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-india__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-india__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-india__gallery"]
+                                styles["c-gallery"],
+                                styles["m-india__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--1"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--1"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--1"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--1"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--2"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--2"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--2"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--2"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--3"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--3"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--3"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--3"]
                                     )}
                                 ></div>
                             </div>
@@ -170,11 +155,11 @@ export default function DoormageddonIndia({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-india__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-india__sectionette"]
                     )}
                 >
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Three sleeps later I unleashed attempt II: the Drill
                         Pyramid. One perfect hole! Two! THE DRILL GOD COMETH!
                     </p>
@@ -182,75 +167,75 @@ export default function DoormageddonIndia({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-india__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-india__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-india__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-india__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-india__gallery"]
+                                styles["c-gallery"],
+                                styles["m-india__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--4"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--4"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--4"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--4"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--5"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--5"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--5"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--5"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--6"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--6"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--6"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--6"]
                                     )}
                                 ></div>
                             </div>
@@ -260,42 +245,34 @@ export default function DoormageddonIndia({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-india__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-india__sectionette"]
                     )}
                 >
                     <p
                         className={classify(
-                            moduleStyles["b-text"],
-                            moduleStyles["b-pullquote"]
+                            styles["b-text"],
+                            styles["b-pullquote"]
                         )}
                     >
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l1"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l1"])}>
                             The Drill God is
                         </span>
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l2"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l2"])}>
                             a goddamned coward.
                         </span>
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         For the riskier latch holes I bought a pre-made tool.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Generally, 1mm matters very little. Here, specifically,
                         it mattered enormously.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         &lsquo;
                         <em>
                             25mm holes suitable for all standard internal doors
@@ -308,14 +285,14 @@ export default function DoormageddonIndia({ moduleStyles }) {
                         &rsquo; perhaps, sold fewer products.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         My shortcut left me with a hole that&mdash;while
                         straight&mdash;was too short and too narrow, another
                         latch hole still to go, and the first stirrings of
                         racism. America can get in the bin.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         2 days of rageful chiselling took care of the first
                         latch. Nervous drilling and liberal use of The Drill
                         Pyramid saw to the second.
@@ -324,94 +301,94 @@ export default function DoormageddonIndia({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-india__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-india__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-india__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-india__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-india__gallery"]
+                                styles["c-gallery"],
+                                styles["m-india__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--7"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--7"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--7"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--7"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--8"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--8"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--8"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--8"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--9"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--9"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--9"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--9"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-india__imgWrap"],
-                                    moduleStyles["m-india__imgWrap--10"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-india__imgWrap"],
+                                    styles["m-india__imgWrap--10"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-india__img"],
-                                        moduleStyles["m-india__img--10"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-india__img"],
+                                        styles["m-india__img--10"]
                                     )}
                                 ></div>
                             </div>
@@ -421,4 +398,6 @@ export default function DoormageddonIndia({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+
+export default DoormageddonIndia;

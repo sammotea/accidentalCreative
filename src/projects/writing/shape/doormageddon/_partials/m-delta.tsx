@@ -1,38 +1,37 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonDelta({ moduleStyles }) {
+const DoormageddonDelta = () => {
     return (
         <section
             className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["c-interstitialWrap"],
-                moduleStyles["m-deltaWrap"]
+                styles["l-sectionWrap"],
+                styles["c-interstitialWrap"],
+                styles["m-deltaWrap"]
             )}
         >
             <div
                 className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["c-interstitial"],
-                    moduleStyles["m-delta"]
+                    styles["l-section"],
+                    styles["c-interstitial"],
+                    styles["m-delta"]
                 )}
             >
                 <div
                     className={classify(
-                        moduleStyles["c-interstitial__inner"],
-                        moduleStyles["m-delta__inner"]
+                        styles["c-interstitial__inner"],
+                        styles["m-delta__inner"]
                     )}
                 >
                     <h1
                         className={classify(
-                            moduleStyles["b-title"],
-                            moduleStyles["c-interstitial__title"],
-                            moduleStyles["m-delta__title"]
+                            styles["b-title"],
+                            styles["c-interstitial__title"],
+                            styles["m-delta__title"]
                         )}
                     >
                         <span
-                            className={classify(
-                                moduleStyles["m-delta__titleText"]
-                            )}
+                            className={classify(styles["m-delta__titleText"])}
                         >
                             The perfect assistant.
                         </span>
@@ -40,8 +39,8 @@ export default function DoormageddonDelta({ moduleStyles }) {
 
                     <p
                         className={classify(
-                            moduleStyles["c-interstitial__text"],
-                            moduleStyles["m-delta__text"]
+                            styles["c-interstitial__text"],
+                            styles["m-delta__text"]
                         )}
                     >
                         <span>
@@ -53,4 +52,5 @@ export default function DoormageddonDelta({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+export default DoormageddonDelta;

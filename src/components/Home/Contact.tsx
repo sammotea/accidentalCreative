@@ -1,12 +1,8 @@
 import classify from "@/utils/classify";
 import { outputContactLink } from "@/utils/antiSpamFunctions";
-interface IProps {
-    styles: {
-        [key: string]: string;
-    };
-}
+import styles from "@/styles/modules/Index.module.scss";
 
-export const Contact: React.FC<IProps> = ({ styles }) => {
+export const Contact = () => {
     return (
         <section className={classify(styles.contactWrap, styles.l_module)}>
             {renderContact()}

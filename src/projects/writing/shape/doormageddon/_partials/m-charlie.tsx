@@ -1,41 +1,37 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonAlpha({ moduleStyles }) {
+const DoormageddonCharlie = () => {
     return (
         <section
             className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-charlieWrap"]
+                styles["l-sectionWrap"],
+                styles["m-charlieWrap"]
             )}
         >
-            <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-charlie"]
-                )}
-            >
+            <div className={classify(styles["l-section"], styles["m-charlie"])}>
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-charlie__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-charlie__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["b-titleWrap"],
-                            moduleStyles["m-charlie__titleWrap"]
+                            styles["b-titleWrap"],
+                            styles["m-charlie__titleWrap"]
                         )}
                     >
                         <h1
                             className={classify(
-                                moduleStyles["b-title"],
-                                moduleStyles["b-title--section"],
-                                moduleStyles["m-charlie_title"]
+                                styles["b-title"],
+                                styles["b-title--section"],
+                                styles["m-charlie_title"]
                             )}
                         >
                             <span
                                 className={classify(
-                                    moduleStyles["m-charlie__titleText"]
+                                    styles["m-charlie__titleText"]
                                 )}
                             >
                                 Jackson Pillock
@@ -43,13 +39,13 @@ export default function DoormageddonAlpha({ moduleStyles }) {
                         </h1>
                     </div>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Find the saddest banana in the fruit bowl and just{" "}
                         <em>destroy</em> it. Spray the jellied mess far and
                         wide: slippers; nose; ceiling.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Repeat for an hour or two, fifteen times, over three
                         weeks. Make it the highlight of your afternoon.
                     </p>
@@ -57,24 +53,24 @@ export default function DoormageddonAlpha({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-charlie__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-charlie__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["b-imgWrap"],
-                            moduleStyles["m-charlie__imgWrap"],
-                            moduleStyles["m-charlie__imgWrap--1"],
-                            moduleStyles["m-charlie__imgWrap--solo"]
+                            styles["b-imgWrap"],
+                            styles["m-charlie__imgWrap"],
+                            styles["m-charlie__imgWrap--1"],
+                            styles["m-charlie__imgWrap--solo"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["b-img"],
-                                moduleStyles["b-img--21"],
-                                moduleStyles["m-charlie__img"],
-                                moduleStyles["m-charlie__img--1"]
+                                styles["b-img"],
+                                styles["b-img--21"],
+                                styles["m-charlie__img"],
+                                styles["m-charlie__img--1"]
                             )}
                         ></div>
                     </div>
@@ -82,29 +78,21 @@ export default function DoormageddonAlpha({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-charlie__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-charlie__sectionette"]
                     )}
                 >
                     <p
                         className={classify(
-                            moduleStyles["b-text"],
-                            moduleStyles["b-pullquote"],
-                            moduleStyles["m-charlie__pullquote"]
+                            styles["b-text"],
+                            styles["b-pullquote"],
+                            styles["m-charlie__pullquote"]
                         )}
                     >
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l1"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l1"])}>
                             Likewise, paint removal.
                         </span>
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l2"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l2"])}>
                             Ming; everywhere; forever.
                         </span>
                     </p>
@@ -112,11 +100,11 @@ export default function DoormageddonAlpha({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-charlie__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-charlie__sectionette"]
                     )}
                 >
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         My journey began prophetically: with great energy and
                         underwhelming progress. Almost a month scraping off
                         paint followed by a week of putting paint back on.
@@ -125,132 +113,132 @@ export default function DoormageddonAlpha({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-charlie__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-charlie__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-charlie__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-charlie__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-charlie__gallery"]
+                                styles["c-gallery"],
+                                styles["m-charlie__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap--2"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-charlie__imgWrap"],
+                                    styles["m-charlie__imgWrap--2"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-charlie__img"],
-                                        moduleStyles["m-charlie__img--2"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-charlie__img"],
+                                        styles["m-charlie__img--2"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap--3"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-charlie__imgWrap"],
+                                    styles["m-charlie__imgWrap--3"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-charlie__img"],
-                                        moduleStyles["m-charlie__img--3"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-charlie__img"],
+                                        styles["m-charlie__img--3"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap--4"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-charlie__imgWrap"],
+                                    styles["m-charlie__imgWrap--4"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-charlie__img"],
-                                        moduleStyles["m-charlie__img--4"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-charlie__img"],
+                                        styles["m-charlie__img--4"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap--5"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-charlie__imgWrap"],
+                                    styles["m-charlie__imgWrap--5"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-charlie__img"],
-                                        moduleStyles["m-charlie__img--5"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-charlie__img"],
+                                        styles["m-charlie__img--5"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap--6"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-charlie__imgWrap"],
+                                    styles["m-charlie__imgWrap--6"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-charlie__img"],
-                                        moduleStyles["m-charlie__img--6"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-charlie__img"],
+                                        styles["m-charlie__img--6"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap"],
-                                    moduleStyles["m-charlie__imgWrap--7"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-charlie__imgWrap"],
+                                    styles["m-charlie__imgWrap--7"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-charlie__img"],
-                                        moduleStyles["m-charlie__img--7"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-charlie__img"],
+                                        styles["m-charlie__img--7"]
                                     )}
                                 ></div>
                             </div>
@@ -260,4 +248,5 @@ export default function DoormageddonAlpha({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+export default DoormageddonCharlie;

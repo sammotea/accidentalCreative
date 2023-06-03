@@ -1,15 +1,12 @@
 import classify from "@/utils/classify";
 import Link from "next/link";
-import { writingUrl } from "@/utils/writing/markdownParser";
+import styles from "@/styles/modules/Index.module.scss";
 
 interface IProps {
-    styles: {
-        [key: string]: string;
-    };
     projects: IProject[];
 }
 
-export const Projects: React.FC<IProps> = ({ styles, projects }) => {
+export const Projects: React.FC<IProps> = ({ projects }) => {
     return (
         <section className={classify(styles.projectsWrap, styles.l_module)}>
             {renderProjects(projects)}

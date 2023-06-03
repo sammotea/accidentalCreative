@@ -1,12 +1,7 @@
 import classify from "@/utils/classify";
+import styles from "@/styles/modules/Index.module.scss";
 
-interface IProps {
-    styles: {
-        [key: string]: string;
-    };
-}
-
-export const Summary: React.FC<IProps> = ({ styles }) => {
+export const Summary = () => {
     return (
         <section className={classify(styles.summaryWrap, styles.l_module)}>
             {renderTitle()}

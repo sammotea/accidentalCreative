@@ -1,41 +1,37 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonFoxtrot({ moduleStyles }) {
+const DoormageddonFoxtrot = () => {
     return (
         <section
             className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-foxtrotWrap"]
+                styles["l-sectionWrap"],
+                styles["m-foxtrotWrap"]
             )}
         >
-            <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-foxtrot"]
-                )}
-            >
+            <div className={classify(styles["l-section"], styles["m-foxtrot"])}>
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-foxtrot__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-foxtrot__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["b-titleWrap"],
-                            moduleStyles["m-foxtrot__titleWrap"]
+                            styles["b-titleWrap"],
+                            styles["m-foxtrot__titleWrap"]
                         )}
                     >
                         <h1
                             className={classify(
-                                moduleStyles["b-title"],
-                                moduleStyles["b-title--section"],
-                                moduleStyles["m-foxtrot_title"]
+                                styles["b-title"],
+                                styles["b-title--section"],
+                                styles["m-foxtrot_title"]
                             )}
                         >
                             <span
                                 className={classify(
-                                    moduleStyles["m-foxtrot__titleText"]
+                                    styles["m-foxtrot__titleText"]
                                 )}
                             >
                                 Dead horse, well flogged
@@ -43,39 +39,31 @@ export default function DoormageddonFoxtrot({ moduleStyles }) {
                         </h1>
                     </div>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Perfection cruelly highlights the imperfect.
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         Thus did I notice the screaming gap over my otherwise
                         pristine door fit.
                     </p>
 
                     <p
                         className={classify(
-                            moduleStyles["b-text"],
-                            moduleStyles["b-pullquote"],
-                            moduleStyles["m-foxtrot__pullquote"]
+                            styles["b-text"],
+                            styles["b-pullquote"],
+                            styles["m-foxtrot__pullquote"]
                         )}
                     >
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l1"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l1"])}>
                             My trusty wood-filler
                         </span>
-                        <span
-                            className={classify(
-                                moduleStyles["b-pullquote__l2"]
-                            )}
-                        >
+                        <span className={classify(styles["b-pullquote__l2"])}>
                             cut zero mustard.
                         </span>
                     </p>
 
-                    <p className={classify(moduleStyles["b-text"])}>
+                    <p className={classify(styles["b-text"])}>
                         But glue-sandwiched MDF sawed at a perfect 86 degree
                         angle and nailed to buggery? Condiments duly sliced.
                     </p>
@@ -83,94 +71,94 @@ export default function DoormageddonFoxtrot({ moduleStyles }) {
 
                 <div
                     className={classify(
-                        moduleStyles["l-sectionette"],
-                        moduleStyles["m-foxtrot__sectionette"]
+                        styles["l-sectionette"],
+                        styles["m-foxtrot__sectionette"]
                     )}
                 >
                     <div
                         className={classify(
-                            moduleStyles["c-galleryWrap"],
-                            moduleStyles["m-foxtrot__galleryWrap"]
+                            styles["c-galleryWrap"],
+                            styles["m-foxtrot__galleryWrap"]
                         )}
                     >
                         <div
                             className={classify(
-                                moduleStyles["c-gallery"],
-                                moduleStyles["m-foxtrot__gallery"]
+                                styles["c-gallery"],
+                                styles["m-foxtrot__gallery"]
                             )}
                         >
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap--1"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-foxtrot__imgWrap"],
+                                    styles["m-foxtrot__imgWrap--1"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-foxtrot__img"],
-                                        moduleStyles["m-foxtrot__img--1"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-foxtrot__img"],
+                                        styles["m-foxtrot__img--1"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap--2"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-foxtrot__imgWrap"],
+                                    styles["m-foxtrot__imgWrap--2"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-foxtrot__img"],
-                                        moduleStyles["m-foxtrot__img--2"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-foxtrot__img"],
+                                        styles["m-foxtrot__img--2"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap--3"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-foxtrot__imgWrap"],
+                                    styles["m-foxtrot__imgWrap--3"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-foxtrot__img"],
-                                        moduleStyles["m-foxtrot__img--3"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-foxtrot__img"],
+                                        styles["m-foxtrot__img--3"]
                                     )}
                                 ></div>
                             </div>
 
                             <div
                                 className={classify(
-                                    moduleStyles["b-imgWrap"],
-                                    moduleStyles["c-gallery__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap"],
-                                    moduleStyles["m-foxtrot__imgWrap--4"]
+                                    styles["b-imgWrap"],
+                                    styles["c-gallery__imgWrap"],
+                                    styles["m-foxtrot__imgWrap"],
+                                    styles["m-foxtrot__imgWrap--4"]
                                 )}
                             >
                                 <div
                                     className={classify(
-                                        moduleStyles["b-img"],
-                                        moduleStyles["b-img--11"],
-                                        moduleStyles["c-gallery__img"],
-                                        moduleStyles["m-foxtrot__img"],
-                                        moduleStyles["m-foxtrot__img--4"]
+                                        styles["b-img"],
+                                        styles["b-img--11"],
+                                        styles["c-gallery__img"],
+                                        styles["m-foxtrot__img"],
+                                        styles["m-foxtrot__img--4"]
                                     )}
                                 ></div>
                             </div>
@@ -180,4 +168,5 @@ export default function DoormageddonFoxtrot({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+export default DoormageddonFoxtrot;

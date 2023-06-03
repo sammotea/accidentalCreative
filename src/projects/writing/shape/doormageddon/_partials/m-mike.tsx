@@ -1,19 +1,16 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonMike({ moduleStyles }) {
+const DoormageddonMike = () => {
     return (
         <section
-            className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-mikeWrap"]
-            )}
+            className={classify(styles["l-sectionWrap"], styles["m-mikeWrap"])}
         >
             <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-mike"]
-                )}
+                className={classify(styles["l-section"], styles["m-mike"])}
             ></div>
         </section>
     );
-}
+};
+
+export default DoormageddonMike;

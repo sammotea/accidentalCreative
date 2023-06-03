@@ -1,47 +1,44 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonKilo({ moduleStyles }) {
+const DoormageddonKilo = () => {
     return (
         <section
             className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["c-interstitialWrap"],
-                moduleStyles["m-kiloWrap"]
+                styles["l-sectionWrap"],
+                styles["c-interstitialWrap"],
+                styles["m-kiloWrap"]
             )}
         >
             <div
                 className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["c-interstitial"],
-                    moduleStyles["m-kilo"]
+                    styles["l-section"],
+                    styles["c-interstitial"],
+                    styles["m-kilo"]
                 )}
             >
                 <div
                     className={classify(
-                        moduleStyles["c-interstitial__inner"],
-                        moduleStyles["m-kilo__inner"]
+                        styles["c-interstitial__inner"],
+                        styles["m-kilo__inner"]
                     )}
                 >
                     <h1
                         className={classify(
-                            moduleStyles["b-title"],
-                            moduleStyles["c-interstitial__title"],
-                            moduleStyles["m-kilo__title"]
+                            styles["b-title"],
+                            styles["c-interstitial__title"],
+                            styles["m-kilo__title"]
                         )}
                     >
-                        <span
-                            className={classify(
-                                moduleStyles["m-kilo__titleText"]
-                            )}
-                        >
+                        <span className={classify(styles["m-kilo__titleText"])}>
                             Dotted i’s, crossed t’s.
                         </span>
                     </h1>
 
                     <p
                         className={classify(
-                            moduleStyles["c-interstitial__text"],
-                            moduleStyles["m-kilo__text"]
+                            styles["c-interstitial__text"],
+                            styles["m-kilo__text"]
                         )}
                     >
                         <span>
@@ -53,4 +50,6 @@ export default function DoormageddonKilo({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+
+export default DoormageddonKilo;

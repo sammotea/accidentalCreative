@@ -1,21 +1,14 @@
 import classify from "@/utils/classify";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-export default function DoormageddonAlpha({ moduleStyles }) {
+const DoormageddonAlpha = () => {
     return (
         <section
-            className={classify(
-                moduleStyles["l-sectionWrap"],
-                moduleStyles["m-alphaWrap"]
-            )}
+            className={classify(styles["l-sectionWrap"], styles["m-alphaWrap"])}
         >
-            <div
-                className={classify(
-                    moduleStyles["l-section"],
-                    moduleStyles["m-alpha"]
-                )}
-            >
-                <div className={classify(moduleStyles["m-alpha__titleWrap"])}>
-                    <h1 className={classify(moduleStyles["m-alpha__title"])}>
+            <div className={classify(styles["l-section"], styles["m-alpha"])}>
+                <div className={classify(styles["m-alpha__titleWrap"])}>
+                    <h1 className={classify(styles["m-alpha__title"])}>
                         <span>Door</span>
                         <span>mageddon</span>
                     </h1>
@@ -23,4 +16,6 @@ export default function DoormageddonAlpha({ moduleStyles }) {
             </div>
         </section>
     );
-}
+};
+
+export default DoormageddonAlpha;

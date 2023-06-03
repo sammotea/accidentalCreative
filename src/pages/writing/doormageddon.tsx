@@ -5,7 +5,7 @@ import { InferGetStaticPropsType } from "next";
 
 import { getParsedMarkdown } from "@/utils/writing/markdownParser";
 
-import s from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
+import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
 import DoormageddonHeader from "@/projects/writing/shape/doormageddon/_partials/c-header";
 import DoormageddonAlpha from "@/projects/writing/shape/doormageddon/_partials/m-alpha";
@@ -30,25 +30,25 @@ const Post: React.FC<IProps> = ({
     postData,
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
     return (
-        <article className={s.doormageddonWrap}>
+        <article className={styles.doormageddonWrap}>
             <Head>
                 <title>{postData.title}</title>
             </Head>
             <PageWrapper>
-                <DoormageddonHeader moduleStyles={s} />
-                <DoormageddonAlpha moduleStyles={s} />
-                <DoormageddonBravo moduleStyles={s} />
-                <DoormageddonCharlie moduleStyles={s} />
-                <DoormageddonDelta moduleStyles={s} />
-                <DoormageddonEcho moduleStyles={s} />
-                <DoormageddonFoxtrot moduleStyles={s} />
-                <DoormageddonGolf moduleStyles={s} />
-                <DoormageddonHotel moduleStyles={s} />
-                <DoormageddonIndia moduleStyles={s} />
-                <DoormageddonJuliet moduleStyles={s} />
-                <DoormageddonKilo moduleStyles={s} />
-                <DoormageddonLima moduleStyles={s} />
-                <DoormageddonMike moduleStyles={s} />
+                <DoormageddonHeader />
+                <DoormageddonAlpha />
+                <DoormageddonBravo />
+                <DoormageddonCharlie />
+                <DoormageddonDelta />
+                <DoormageddonEcho />
+                <DoormageddonFoxtrot />
+                <DoormageddonGolf />
+                <DoormageddonHotel />
+                <DoormageddonIndia />
+                <DoormageddonJuliet />
+                <DoormageddonKilo />
+                <DoormageddonLima />
+                <DoormageddonMike />
             </PageWrapper>
         </article>
     );

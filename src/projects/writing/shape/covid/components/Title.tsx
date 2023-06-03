@@ -2,9 +2,7 @@ import classify from "@/utils/classify";
 
 interface IProps {
     title: string;
-    styles: {
-        [key: string]: string;
-    };
+    styles: IStylesModule;
 }
 
 export const Title: React.FC<IProps> = ({ title, styles }) => {
