@@ -1,6 +1,6 @@
 @import '__scssmixins';
 @import '_mixins';
-//@import 'https://use.typekit.net/qxa7czp.css';
+@import 'https://use.typekit.net/qxa7czp.css';
 
 $space 		    : 	2rem;
 
@@ -77,6 +77,10 @@ $sidebarWidth   :   14rem;
     font-variant: small-caps;
     margin-bottom: .5*$space;
     font-size: $bravo;
+}
+
+.pageWrapper {
+	opacity: 1 !important;
 }
 
 .header {

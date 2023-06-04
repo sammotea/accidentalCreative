@@ -32,7 +32,7 @@ const Post: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <PageWrapper className={classify(s[`${cl}`])}>
+            <PageWrapper className={classify(s[`${cl}`], s.pageWrapper)}>
                 <Header styles={s} />
                 <article>
                     <Title styles={s} title={title} />
