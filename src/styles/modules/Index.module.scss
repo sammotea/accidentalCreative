@@ -1,4 +1,4 @@
-//@import url("https://use.typekit.net/wcl1yjt.css");
+@import url("https://use.typekit.net/wcl1yjt.css");
 @import '../_mixins';
 
 $space : 1.5rem;
@@ -29,6 +29,7 @@ $bp--1		: 	34rem;
 	height: 100%;
     @include _font--body;
 	color: #333;
+	opacity: 1 !important;
 	
 	@include bp( 'after', $bp--1 ) {
 		padding: $space 2*$space;

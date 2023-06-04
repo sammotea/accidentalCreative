@@ -34,7 +34,7 @@ const Post: React.FC<IProps> = ({
             <Head>
                 <title>{postData.title}</title>
             </Head>
-            <PageWrapper>
+            <PageWrapper className={styles.pageWrapper}>
                 <DoormageddonHeader />
                 <DoormageddonAlpha />
                 <DoormageddonBravo />

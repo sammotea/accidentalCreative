@@ -1,6 +1,6 @@
 // @import '__scssreset';
 // @import '__scssfallbacks';
-//@import  "https://use.typekit.net/mss3hvq.css";
+@import  "https://use.typekit.net/mss3hvq.css";
 @import "https://fonts.googleapis.com/css?family=Playfair+Display:900&display=swap";
 @import '__scssmixins';
 @import '__scssvariables';
@@ -8,6 +8,10 @@
 @import '__variables/all';
 
 @import '_mixins';
+
+.pageWrapper {
+	opacity: 1 !important;
+}
 
 .doormageddonWrap {
 	font-family: $font--3;
