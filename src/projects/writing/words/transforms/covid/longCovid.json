@@ -1,5 +1,5 @@
-export const transforms = {
-    XFOOTNOTE: [
+{
+    "XFOOTNOTE": [
         "Methodological problems include: no controls; no confirmation of infection; blending severity cohorts; relying on proxies—databases, doctor’s visits—for Long Covid; recall bias; small numbers; statistical massage. Every study suffers at least one of these and basic definitions differ between studies.",
 
         "All of the numbers for this question and the next come from one source for simplicity, smell-checked against many other sources. It’s <em>a good source for our purposes</em>: 90% non-hospitalised, big numbers, granular, long-running, UK-based, somewhat rigorous, sometimes controlled against non-Coviders, sometimes lab tested, and <a href='https://blog.ons.gov.uk/2021/09/16/how-common-is-long-covid-that-depends-on-how-you-measure-it/' target='_blank'>the authors own up to their (really bad!) statistical boo-boos.</a>",
@@ -14,7 +14,7 @@ export const transforms = {
 
         "This is a statistical assumption called <em>normal distribution</em>.",
 
-        "I <em>believe</em> information spread is good enough. I’ll expand on flawed monitoring system, the unmeasured value of gossip, and broken transmissions in a later essay on pharmacovigilance. [Ed: he did not.]",
+        "I <em>believe</em> information spread is good enough. I’ll expand on flawed monitoring system, the unmeasured value of gossip, and broken transmissions in a later essay on pharmacovigilance. [Ed: he did not.]"
     ],
-    XIMAGE: ["longCovidRecoveryTrends.png"],
-};
+    "XIMAGE": ["longCovidRecoveryTrends.png"]
+}

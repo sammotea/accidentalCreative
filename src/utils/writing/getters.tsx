@@ -21,15 +21,11 @@ const additionsRoute = path.join(process.cwd(), partialAdditionsRoute);
 export async function getTransforms(
     ...route: string[]
 ): Promise<ITransformsObj | undefined> {
-    const maybeTransformsFile = path.join(transformRoute, ...route) + ".tsx";
+    const maybeTransformsFile = path.join(transformRoute, ...route) + ".json";
     const hasTransforms = await fs.existsSync(maybeTransformsFile);
     if (hasTransforms) {
-        // Webpack throws a barny with fully dynamic import so we have to use a string literal
-        // :https://webpack.js.org/api/module-methods/#dynamic-expressions-in-import
-        const { transforms }: { transforms: ITransformsObj } = await import(
-            `/Users/sammotea/Dropbox/development/localhost/_projects/accidental_creative/v3/accidental_creative--v3/${partialTransformsRoute}/${route.join(
-                "/"
-            )}.tsx`
+        const transforms: ITransformsObj = JSON.parse(
+            fs.readFileSync(maybeTransformsFile, "utf-8")
         );
         return transforms;
     } else {
@@ -42,10 +38,8 @@ export async function getAdditions(...route: string[]): Promise<any> {
     const hasAdditions = await fs.existsSync(maybeAdditionsFile);
 
     if (hasAdditions) {
-        const { additions }: { additions: any } = await import(
-            `/Users/sammotea/Dropbox/development/localhost/_projects/accidental_creative/v3/accidental_creative--v3/${partialAdditionsRoute}/${route.join(
-                "/"
-            )}.tsx`
+        const additions = JSON.parse(
+            fs.readFileSync(maybeAdditionsFile, "utf-8")
         );
         return additions;
     } else {

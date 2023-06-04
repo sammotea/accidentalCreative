@@ -1,5 +1,5 @@
-export const transforms = {
-    XFOOTNOTE: [
+{
+    "XFOOTNOTE": [
         "England had much more reliable data-collection than the UK as a whole. January was the peak of the second wave of infections, a high point for national testing, and before widespread vaccinations muddied the severity waters.",
 
         "Some of these individuals were tested by their employer.",
@@ -16,7 +16,7 @@ export const transforms = {
 
         "10:1 for your age group * ( 20% / 80% ) for your health.",
 
-        "<a href='https://www.icnarc.org/our-audit/audits/cmp/reports' target='_blank'>1,200 ICU admissions</a> of the <a href='https://docs.google.com/spreadsheets/d/1wjucMoNfyz8ZnpGzA6RyaCm4fBnUb89d666k77uEWuc/edit#gid=965105398' target='_blank'>10,000 January hospital admissions for your age group</a>. Most of those were not severely unhealthy before admission but I couldn’t tell you how many were in perfect health.",
+        "<a href='https://www.icnarc.org/our-audit/audits/cmp/reports' target='_blank'>1,200 ICU admissions</a> of the <a href='https://docs.google.com/spreadsheets/d/1wjucMoNfyz8ZnpGzA6RyaCm4fBnUb89d666k77uEWuc/edit#gid=965105398' target='_blank'>10,000 January hospital admissions for your age group</a>. Most of those were not severely unhealthy before admission but I couldn’t tell you how many were in perfect health."
     ],
-    XIMAGE: ["hospitalisationRisk.png", "deathRisk.png"],
-};
+    "XIMAGE": ["hospitalisationRisk.png", "deathRisk.png"]
+}

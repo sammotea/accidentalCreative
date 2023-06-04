@@ -75,8 +75,9 @@ function replaceWithImages(
     contentWithImages = content.replaceAll(transformKeys["image"], () => {
         const curImage = transforms[matchIndex++];
 
+        // Not using <Image> due to height and width requirement silliness
         return renderToString(
-            <Image
+            <img
                 src={`/writingAssets/${category}/_img/${curImage}`}
                 alt={curImage}
             />
