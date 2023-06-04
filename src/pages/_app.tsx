@@ -4,14 +4,12 @@ import { useEffect } from "react";
 import classify from "@/utils/classify";
 
 export default function App({ Component, pageProps }: AppProps) {
-    console.log(pageProps);
-
-    useEffect(() => {
-        const htmlClasses = getHtmlClasses(
-            pageProps.postData?.designFlavour || ""
-        );
-        document.documentElement.className = htmlClasses;
-    });
+    // useEffect(() => {
+    //     const htmlClasses = getHtmlClasses(
+    //         pageProps.postData?.designFlavour || ""
+    //     );
+    //     document.documentElement.className = htmlClasses;
+    // });
 
     return <Component {...pageProps} />;
 
