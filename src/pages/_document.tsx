@@ -6,9 +6,10 @@ export default class MyDocument extends Document {
     render() {
         const currentPageNextData = this.props.__NEXT_DATA__;
         const htmlClasses = getHtmlClasses(currentPageNextData);
+        //console.log(this.props);
 
         return (
-            <Html className={htmlClasses}>
+            <Html>
                 <Head />
                 <body>
                     <Main />
