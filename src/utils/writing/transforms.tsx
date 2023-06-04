@@ -1,5 +1,4 @@
 import path from "path";
-import fs from "fs";
 import { renderToString } from "react-dom/server";
 import Image from "next/image";
 import Footnote from "@/projects/writing/shape/components/default/footnote";
@@ -77,7 +76,7 @@ function replaceWithImages(
         const curImage = transforms[matchIndex++];
 
         return renderToString(
-            <img
+            <Image
                 src={`/writingAssets/${category}/_img/${curImage}`}
                 alt={curImage}
             />

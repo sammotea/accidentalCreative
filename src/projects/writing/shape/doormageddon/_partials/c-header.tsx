@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classify from "@/utils/classify";
 import { outputContactLink } from "@/utils/antiSpamFunctions";
 import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
@@ -8,12 +9,12 @@ const DoormageddonHeader = () => {
             <div className={classify(styles["c-header"])}>
                 <ul className={classify(styles["c-header__menu"])}>
                     <li className={classify(styles["c-header__menuItem"])}>
-                        <a
+                        <Link
                             className={classify(styles["c-header__menuLink"])}
                             href="/"
                         >
                             Homewards
-                        </a>
+                        </Link>
                     </li>
 
                     <li className={classify(styles["c-header__menuItem"])}>

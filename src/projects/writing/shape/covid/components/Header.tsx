@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classify from "@/utils/classify";
 import { outputContactLink } from "@/utils/antiSpamFunctions";
 
@@ -8,7 +9,7 @@ interface IProps {
 export const Header: React.FC<IProps> = ({ styles }) => {
     return (
         <header className={classify(styles["header"])}>
-            <a
+            <Link
                 href="/"
                 className={classify(
                     styles["headerLink"],
@@ -16,7 +17,7 @@ export const Header: React.FC<IProps> = ({ styles }) => {
                 )}
             >
                 Homewards
-            </a>
+            </Link>
             {outputContactLink(
                 "",
                 classify(styles["headerLink"], styles["headerLink--contact"])
