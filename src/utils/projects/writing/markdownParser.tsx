@@ -6,15 +6,13 @@ import html from "remark-html";
 
 import { convertToDateKey } from "../transformers";
 
-export const markdownFolderPath = path.join(
+export const writingPath = path.join(
     process.cwd(),
     "src",
+    "markdown",
     "projects",
-    "writing",
-    "words",
-    "markdown"
+    "writing"
 );
-
 export const writingUrl = path.join("writing");
 
 export const getParsedMarkdown = (
@@ -23,7 +21,7 @@ export const getParsedMarkdown = (
 ): IPost => {
     const id = fileName.replace(/\.[^.]*$/, "");
 
-    const filePath = path.join(markdownFolderPath, enclosingFolder, `${id}.md`);
+    const filePath = path.join(writingPath, enclosingFolder, `${id}.md`);
     const parsedContent = parseMarkdown(filePath);
 
     // Next.js hates TS optional params as undefined. Hack.

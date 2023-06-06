@@ -1,9 +1,6 @@
 import path from "path";
 import fs from "fs";
-import {
-    markdownFolderPath,
-    getParsedMarkdown,
-} from "./writing/markdownParser";
+import { writingPath, getParsedMarkdown } from "./writing/markdownParser";
 
 const mdRegex = /\.md$/;
 const externalLinksPath = path.join(
@@ -47,7 +44,7 @@ export const maybeAddTypeToProject = (
 };
 
 export const getAllPosts = (showHidden: boolean = false): IPost[] => {
-    const markdownFilesAndFolders = getMarkdownFolderContents();
+    const markdownFilesAndFolders = getMarkdownFolderContentsForWriting();
     const parsedPosts = getParsedPostsFromMarkdown(markdownFilesAndFolders);
     const visiblePosts = showHidden
         ? parsedPosts
@@ -68,7 +65,7 @@ const getParsedPostsFromMarkdown = (
         if (mdRegex.test(cur)) {
             parsedPosts.push(getParsedMarkdown(cur, enclosingFolder));
         } else {
-            const filesInFolder = getMarkdownFolderContents(cur);
+            const filesInFolder = getMarkdownFolderContentsForWriting(cur);
 
             if (filesInFolder.length) {
                 parsedPosts.push(
@@ -81,8 +78,10 @@ const getParsedPostsFromMarkdown = (
     return parsedPosts;
 };
 
-export const getMarkdownFolderContents = (...subfolders: string[]) => {
-    const dir = path.join(markdownFolderPath, ...subfolders);
+export const getMarkdownFolderContentsForWriting = (
+    ...subfolders: string[]
+) => {
+    const dir = path.join(writingPath, ...subfolders);
     const dirContents = fs.readdirSync(dir);
     return dirContents;
 };
@@ -90,7 +89,8 @@ export const getMarkdownFolderContents = (...subfolders: string[]) => {
 export const getPostsForStaticPaths = (
     subfolder: string = ""
 ): IStaticPathsParamsObj[] => {
-    const markdownFilesOrFolders = getMarkdownFolderContents(subfolder);
+    const markdownFilesOrFolders =
+        getMarkdownFolderContentsForWriting(subfolder);
     const paths: IStaticPathsParamsObj[] = [];
     markdownFilesOrFolders.forEach((cur) => {
         if (mdRegex.test(cur)) {

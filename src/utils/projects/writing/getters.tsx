@@ -4,18 +4,18 @@ import fs from "fs";
 const transformRoute = path.join(
     process.cwd(),
     "src",
+    "json",
     "projects",
     "writing",
-    "words",
     "transforms"
 );
 
 const additionsRoute = path.join(
     process.cwd(),
     "src",
+    "json",
     "projects",
     "writing",
-    "words",
     "additions"
 );
 
