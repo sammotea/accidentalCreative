@@ -1,5 +1,5 @@
 import classify from "@/utils/classify";
-import styles from "@/styles/modules/Index.module.scss";
+import styles from "@/styles/pages/index/Index.module.scss";
 
 export const Summary = () => {
     return (

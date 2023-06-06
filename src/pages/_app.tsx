@@ -1,4 +1,4 @@
-import "@/styles/style.scss";
+import "@/styles/_site/_app/style.scss";
 import type { AppProps } from "next/app";
 import { useEffect } from "react";
 import classify from "@/utils/classify";

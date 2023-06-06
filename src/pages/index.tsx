@@ -1,11 +1,11 @@
 import Head from "next/head";
 
-import styles from "@/styles/modules/Index.module.scss";
+import styles from "@/styles/pages/index/Index.module.scss";
 
-import PageWrapper from "@/components/dev/PageWrapper";
-import { Summary } from "@/components/pages/Home/Summary";
-import { Contact } from "@/components/pages/Home/Contact";
-import { Projects } from "@/components/pages/Home/Projects";
+import PageWrapper from "@/components/_site/PageWrapper";
+import { Summary } from "@/components/pages/index/Summary";
+import { Contact } from "@/components/pages/index/Contact";
+import { Projects } from "@/components/pages/index/Projects";
 
 import { InferGetStaticPropsType } from "next";
 

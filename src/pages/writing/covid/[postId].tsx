@@ -1,4 +1,4 @@
-import PageWrapper from "@/components/dev/PageWrapper";
+import PageWrapper from "@/components/_site/PageWrapper";
 import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
 import { IPostscript } from "@/components/projects/writing/covid//Postscript";
@@ -12,7 +12,7 @@ import {
 } from "@/utils/writing/markdownParser";
 
 import classify from "@/utils/classify";
-import s from "@/projects/writing/shape/covid/_scss/covid.module.scss";
+import s from "@/styles/projects/writing/covid/covid.module.scss";
 
 import { Postscript } from "@/components/projects/writing/covid//Postscript";
 import { Sidebar } from "@/components/projects/writing/covid//Sidebar";

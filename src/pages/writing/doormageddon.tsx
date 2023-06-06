@@ -1,11 +1,11 @@
-import PageWrapper from "@/components/dev/PageWrapper";
+import PageWrapper from "@/components/_site/PageWrapper";
 import Head from "next/head";
 
 import { InferGetStaticPropsType } from "next";
 
 import { getParsedMarkdown } from "@/utils/writing/markdownParser";
 
-import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
+import styles from "@/styles/projects/writing/doormageddon/doormageddon.module.scss";
 
 import DoormageddonHeader from "@/components/projects/writing/doormageddon/c-header";
 import DoormageddonAlpha from "@/components/projects/writing/doormageddon//m-alpha";

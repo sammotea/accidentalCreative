@@ -1,6 +1,6 @@
 import classify from "@/utils/classify";
 import Link from "next/link";
-import styles from "@/styles/modules/Index.module.scss";
+import styles from "@/styles/pages/index/Index.module.scss";
 
 interface IProps {
     projects: IProject[];

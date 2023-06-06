@@ -1,5 +1,5 @@
 import classify from "@/utils/classify";
-import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
+import styles from "@/styles/projects/writing/doormageddon/doormageddon.module.scss";
 
 const DoormageddonDelta = () => {
     return (

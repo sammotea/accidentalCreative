@@ -1,6 +1,6 @@
 import classify from "@/utils/classify";
 import { outputContactLink } from "@/utils/antiSpamFunctions";
-import styles from "@/styles/modules/Index.module.scss";
+import styles from "@/styles/pages/index/Index.module.scss";
 
 export const Contact = () => {
     return (
