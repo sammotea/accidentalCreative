@@ -1,4 +1,4 @@
-import classify from "@/utils/classify";
+import classify from "@/utils/dev/classify";
 
 type postIds =
     | "introductionForStrangers"

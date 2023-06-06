@@ -3,7 +3,7 @@ import Head from "next/head";
 
 import { InferGetStaticPropsType } from "next";
 
-import { getParsedMarkdown } from "@/utils/writing/markdownParser";
+import { getParsedMarkdown } from "@/utils/projects/writing/markdownParser";
 
 import styles from "@/styles/projects/writing/doormageddon/doormageddon.module.scss";
 

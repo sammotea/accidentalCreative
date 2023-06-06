@@ -1,6 +1,6 @@
 import Link from "next/link";
-import classify from "@/utils/classify";
-import { outputContactLink } from "@/utils/antiSpamFunctions";
+import classify from "@/utils/dev/classify";
+import { outputContactLink } from "@/utils/misc/antiSpamFunctions";
 import styles from "@/styles/projects/writing/doormageddon/doormageddon.module.scss";
 
 const DoormageddonHeader = () => {

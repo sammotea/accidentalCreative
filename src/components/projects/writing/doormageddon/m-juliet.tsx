@@ -1,4 +1,4 @@
-import classify from "@/utils/classify";
+import classify from "@/utils/dev/classify";
 import styles from "@/styles/projects/writing/doormageddon/doormageddon.module.scss";
 
 const DoormageddonJuliet = () => {

@@ -1,22 +1,23 @@
 import path from "path";
 import fs from "fs";
 
-const partialTransformsRoute = path.join(
+const transformRoute = path.join(
+    process.cwd(),
     "src",
     "projects",
     "writing",
     "words",
     "transforms"
 );
-const transformRoute = path.join(process.cwd(), partialTransformsRoute);
-const partialAdditionsRoute = path.join(
+
+const additionsRoute = path.join(
+    process.cwd(),
     "src",
     "projects",
     "writing",
     "words",
     "additions"
 );
-const additionsRoute = path.join(process.cwd(), partialAdditionsRoute);
 
 export async function getTransforms(
     ...route: string[]

@@ -4,7 +4,7 @@ import {
     sortProjectsByCategory,
     sortProjectsByDate,
 } from "./sorters";
-import { writingUrl } from "@/utils/writing/markdownParser";
+import { writingUrl } from "@/utils/projects/writing/markdownParser";
 
 const flattenMap = {
     covid: {

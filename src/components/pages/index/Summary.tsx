@@ -1,4 +1,4 @@
-import classify from "@/utils/classify";
+import classify from "@/utils/dev/classify";
 import styles from "@/styles/pages/index/Index.module.scss";
 
 export const Summary = () => {

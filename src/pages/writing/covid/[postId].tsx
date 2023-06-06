@@ -3,15 +3,15 @@ import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
 import { IPostscript } from "@/components/projects/writing/covid//Postscript";
 
-import { getTransforms, getAdditions } from "@/utils/writing/getters";
+import { getTransforms, getAdditions } from "@/utils/projects/writing/getters";
 import { getPostsForStaticPaths } from "@/utils/projects/getters";
-import { replaceContent } from "@/utils/writing/transforms";
+import { replaceContent } from "@/utils/projects/writing/transforms";
 import {
     getParsedMarkdown,
     convertMarkdownToHtmlString,
-} from "@/utils/writing/markdownParser";
+} from "@/utils/projects/writing/markdownParser";
 
-import classify from "@/utils/classify";
+import classify from "@/utils/dev/classify";
 import s from "@/styles/projects/writing/covid/covid.module.scss";
 
 import { Postscript } from "@/components/projects/writing/covid//Postscript";

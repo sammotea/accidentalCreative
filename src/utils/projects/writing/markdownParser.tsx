@@ -4,7 +4,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
 
-import { convertToDateKey } from "../projects/transformers";
+import { convertToDateKey } from "../transformers";
 
 export const markdownFolderPath = path.join(
     process.cwd(),

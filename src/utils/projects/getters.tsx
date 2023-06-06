@@ -3,11 +3,16 @@ import fs from "fs";
 import {
     markdownFolderPath,
     getParsedMarkdown,
-} from "../writing/markdownParser";
-
-import { externalLinks } from "@/projects/externalLinks";
+} from "./writing/markdownParser";
 
 const mdRegex = /\.md$/;
+const externalLinksPath = path.join(
+    process.cwd(),
+    "src",
+    "json",
+    "projects",
+    "externalLinks.json"
+);
 
 export const getAllProjects = (showHidden: boolean = false) => {
     const allLinks = getAllExternalLinks();
@@ -18,6 +23,9 @@ export const getAllProjects = (showHidden: boolean = false) => {
 };
 
 export const getAllExternalLinks = (): ILink[] => {
+    const externalLinks: ILink[] = JSON.parse(
+        fs.readFileSync(externalLinksPath, "utf-8")
+    );
     const externalLinksWithType = externalLinks.map((link) => {
         return maybeAddTypeToProject(link, "externalLink");
     });
