@@ -93,7 +93,7 @@ const DoormageddonCharlie = () => {
                             Likewise, paint removal.
                         </span>
                         <span className={classify(styles["b-pullquote__l2"])}>
-                            Ming; everywhere; forever.
+                            Ming, everywhere, forever.
                         </span>
                     </p>
                 </div>

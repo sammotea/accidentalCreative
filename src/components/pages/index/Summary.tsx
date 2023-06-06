@@ -21,9 +21,9 @@ export const Summary = () => {
 
     function renderDescs() {
         const descItems = [
-            "Web-developer and complexity-hider",
-            "Project-creator / salesman / manager",
-            "Assumption-hunter and technophobe",
+            "Web developer",
+            "Assumption hunter",
+            "Project starter, fixer, and finisher",
         ];
 
         return (
@@ -41,10 +41,16 @@ export const Summary = () => {
 
     function renderLede() {
         return (
-            <p className={classify(styles.lede, styles.l_module)}>
-                I call things by their real name and keep my word. Based in
-                Manchester, UK.{" "}
-            </p>
+            <>
+                <p className={classify(styles.lede, styles.l_module)}>
+                    I fill in the messy bits between theory and practice, call
+                    things by their real name, and keep my word.
+                </p>
+
+                <p className={classify(styles.lede, styles.l_module)}>
+                    Based in Manchester, UK.
+                </p>
+            </>
         );
     }
 };
