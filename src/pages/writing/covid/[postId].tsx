@@ -1,7 +1,7 @@
-import PageWrapper from "@/components/PageWrapper";
+import PageWrapper from "@/components/dev/PageWrapper";
 import Head from "next/head";
 import { InferGetStaticPropsType } from "next";
-import { IPostscript } from "@/projects/writing/shape/covid/components/Postscript";
+import { IPostscript } from "@/components/projects/writing/covid//Postscript";
 
 import { getTransforms, getAdditions } from "@/utils/writing/getters";
 import { getPostsForStaticPaths } from "@/utils/projects/getters";
@@ -14,10 +14,10 @@ import {
 import classify from "@/utils/classify";
 import s from "@/projects/writing/shape/covid/_scss/covid.module.scss";
 
-import { Postscript } from "@/projects/writing/shape/covid/components/Postscript";
-import { Sidebar } from "@/projects/writing/shape/covid/components/Sidebar";
-import { Header } from "@/projects/writing/shape/covid/components/Header";
-import { Title } from "@/projects/writing/shape/covid/components/Title";
+import { Postscript } from "@/components/projects/writing/covid//Postscript";
+import { Sidebar } from "@/components/projects/writing/covid//Sidebar";
+import { Header } from "@/components/projects/writing/covid/Header";
+import { Title } from "@/components/projects/writing/covid//Title";
 
 const category = "covid";
 

@@ -1,8 +1,8 @@
 import path from "path";
 import { renderToString } from "react-dom/server";
 import Image from "next/image";
-import Footnote from "@/projects/writing/shape/components/default/footnote";
-import FootnoteLink from "@/projects/writing/shape/components/default/footnoteLink";
+import Footnote from "@/components/projects/writing/_default/footnote";
+import FootnoteLink from "@/components/projects/writing/_default/footnoteLink";
 
 const shapeRoute = path.join(
     process.cwd(),

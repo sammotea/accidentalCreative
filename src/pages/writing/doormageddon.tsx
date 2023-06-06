@@ -1,4 +1,4 @@
-import PageWrapper from "@/components/PageWrapper";
+import PageWrapper from "@/components/dev/PageWrapper";
 import Head from "next/head";
 
 import { InferGetStaticPropsType } from "next";
@@ -7,20 +7,20 @@ import { getParsedMarkdown } from "@/utils/writing/markdownParser";
 
 import styles from "@/projects/writing/shape/doormageddon/_scss/doormageddon.module.scss";
 
-import DoormageddonHeader from "@/projects/writing/shape/doormageddon/_partials/c-header";
-import DoormageddonAlpha from "@/projects/writing/shape/doormageddon/_partials/m-alpha";
-import DoormageddonBravo from "@/projects/writing/shape/doormageddon/_partials/m-bravo";
-import DoormageddonCharlie from "@/projects/writing/shape/doormageddon/_partials/m-charlie";
-import DoormageddonDelta from "@/projects/writing/shape/doormageddon/_partials/m-delta";
-import DoormageddonEcho from "@/projects/writing/shape/doormageddon/_partials/m-echo";
-import DoormageddonFoxtrot from "@/projects/writing/shape/doormageddon/_partials/m-foxtrot";
-import DoormageddonGolf from "@/projects/writing/shape/doormageddon/_partials/m-golf";
-import DoormageddonHotel from "@/projects/writing/shape/doormageddon/_partials/m-hotel";
-import DoormageddonIndia from "@/projects/writing/shape/doormageddon/_partials/m-india";
-import DoormageddonJuliet from "@/projects/writing/shape/doormageddon/_partials/m-juliet";
-import DoormageddonKilo from "@/projects/writing/shape/doormageddon/_partials/m-kilo";
-import DoormageddonLima from "@/projects/writing/shape/doormageddon/_partials/m-lima";
-import DoormageddonMike from "@/projects/writing/shape/doormageddon/_partials/m-mike";
+import DoormageddonHeader from "@/components/projects/writing/doormageddon/c-header";
+import DoormageddonAlpha from "@/components/projects/writing/doormageddon//m-alpha";
+import DoormageddonBravo from "@/components/projects/writing/doormageddon//m-bravo";
+import DoormageddonCharlie from "@/components/projects/writing/doormageddon//m-charlie";
+import DoormageddonDelta from "@/components/projects/writing/doormageddon//m-delta";
+import DoormageddonEcho from "@/components/projects/writing/doormageddon//m-echo";
+import DoormageddonFoxtrot from "@/components/projects/writing/doormageddon//m-foxtrot";
+import DoormageddonGolf from "@/components/projects/writing/doormageddon//m-golf";
+import DoormageddonHotel from "@/components/projects/writing/doormageddon//m-hotel";
+import DoormageddonIndia from "@/components/projects/writing/doormageddon//m-india";
+import DoormageddonJuliet from "@/components/projects/writing/doormageddon//m-juliet";
+import DoormageddonKilo from "@/components/projects/writing/doormageddon//m-kilo";
+import DoormageddonLima from "@/components/projects/writing/doormageddon//m-lima";
+import DoormageddonMike from "@/components/projects/writing/doormageddon//m-mike";
 
 interface IProps {
     postData: IPost;

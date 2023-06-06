@@ -2,10 +2,10 @@ import Head from "next/head";
 
 import styles from "@/styles/modules/Index.module.scss";
 
-import PageWrapper from "@/components/PageWrapper";
-import { Summary } from "@/components/Home/Summary";
-import { Contact } from "@/components/Home/Contact";
-import { Projects } from "@/components/Home/Projects";
+import PageWrapper from "@/components/dev/PageWrapper";
+import { Summary } from "@/components/pages/Home/Summary";
+import { Contact } from "@/components/pages/Home/Contact";
+import { Projects } from "@/components/pages/Home/Projects";
 
 import { InferGetStaticPropsType } from "next";
 
