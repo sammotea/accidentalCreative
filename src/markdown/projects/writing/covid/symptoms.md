@@ -4,7 +4,9 @@ date: "2022-02-10"
 designFlavour: "covid"
 ---
 
-[Official guidelines](https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/) don’t tell us much. We want a realistic idea of how Covid might affect our lives and when to worry. Here’s how I think about it:
+[Official guidelines](https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/) don’t tell us much. We want a realistic idea of how Covid might affect our lives and when to worry.
+
+Here’s how the disease progresses:
 
 ## Inconvenient Covid
 
@@ -18,7 +20,7 @@ Common symptoms include:
 -   Headache;
 -   Tiredness XFOOTNOTE.
 
-You’ll shake it off in a few weeks. Or—within a few days of feeling ill—it will get worse.
+You’ll shake it off in a few weeks. Or—within a few days of feeling ill—it will get worse and become…
 
 ## Ominous Covid
 
@@ -31,7 +33,9 @@ _Ominous Covid_ feels like a scary flu. _Additional_ common symptoms include:
 
 You’ll be bed-ridden for a few days. (Or should be, you stubborn numpty.)
 
-You might gasp for breath or pant after climbing the stairs. If so, start worrying. If you struggle to finish a sentence, your oximeter readings drop below 95, or parts of you turn blue please call an ambulance. Then we panic.
+You might gasp for breath or pant after climbing the stairs. If so, start worrying.
+
+If you struggle to finish a sentence, your oximeter readings drop below 95, or parts of you turn blue we panic and start thinking about…
 
 ## Ruinous Covid
 

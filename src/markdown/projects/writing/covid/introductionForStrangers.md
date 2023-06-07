@@ -11,19 +11,21 @@ I showed my working, provided context, and let her reach her own conclusions. Th
 
 ---
 
-Covid information was a cesspit of lies: noble lies, lies of incompetence, lies of arse-covering, and lies for fun and profit.
+Information about Covid was mostly black and white and wrong.
 
-By late 2020 my Mum had adopted the certainty and models of one team of liars. Her actions began to reflect those wonky models.
+Black _or_ white, rather:
 
-_Adult_ decisions about how to live require an understanding of risk.
+-   “_Covid is deadly / just the flu!_”
+-   “_Vaccines will save you / kill you!_”
+-   “_Masks save lives / do nothing!_”
 
-The lies made it unforgivably difficult to get one or, worse, correct one.
+By late 2020 my Mum had adopted the certainty and models of one team. Her actions began to reflect those wonky models.
 
-Nonetheless, I tried.
+I tried to give her the means to make her own model.
 
 ---
 
-Specifically I tried to answer the question “_Should we get a Covid vaccine?_”, starting with:
+Specifically I tried to exhaustively answer the question “_Should we get a Covid vaccine?_” which mapped to:
 
 -   Is Covid dangerous to us? _If so_…
 -   Can we avoid catching it? _If not_…
@@ -33,16 +35,14 @@ Specifically I tried to answer the question “_Should we get a Covid vaccine?_�
 -   At what cost? _and_…
 -   What is unknowable and how should we account for that?
 
-The good-faith answers I found were mostly oversimplifications of complex topics or heavy on assumptions. I set out to understand the complex and replace assumptions with arguments I could justify.
-
 Getting to the starting line took me ~95,000 words of notes, highlights, and first-pass summaries.
 
-To then write the three essays here took me another 6 months: finding a narrative thread, double-checking my working, estimating my trust in the underlying data, and a long slog of summarising without misleading.
+To then write the three essays answering the first subquestion took me another 6 months: finding a narrative thread, double-checking my working, estimating my trust in the underlying data, and a long slog of summarising without misleading.
 
 ---
 
-My goal was to protect and educate those I love.
+My goal was to protect and educate those I love. I had a [pretty good track-record](emailWarning).
 
 I failed as hard as a man could fail. My efforts changed nothing but my hair colour.
 
-Oh well. [What does Covid do?](symptoms).
+Oh well. [What does Covid do?](symptoms)

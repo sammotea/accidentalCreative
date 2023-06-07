@@ -61,7 +61,7 @@ But sometimes no. Graphs like the one above plateau rather than going to zero ov
 
 _Some people’s lives have been destroyed and they have no idea what’s wrong with them or if they will ever get better._
 
-### Could Covid have as-yet-unknow, long-term consequences?
+### Could Covid have as-yet-unknown, long-term consequences?
 
 Very yes.
 
@@ -69,9 +69,11 @@ Covid is a black box. Millions of hospital cases under professional observation 
 
 Predicting _long-term_ consequences from that wobbly vantage is a non-starter. Rigorous observations would help but they don’t exist. Surprises are probable. Some might be terrible.
 
-There are [rumours of lung scarring](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200110) after even asymptomatic Covid; [cardiovascular problems](https://www.nature.com/articles/s41586-021-03553-9) following mild Covid; and [IQ loss](https://linkinghub.elsevier.com/retrieve/pii/S2589537021003242) for everyone. Mental health problems after Covid show up in most studies. If any of that smoke turns out to be fire, bugger.
+There are _rumours_ of [lung scarring](https://pubs.rsna.org/doi/full/10.1148/ryct.2020200110) after even asymptomatic Covid; [cardiovascular problems](https://www.nature.com/articles/s41586-021-03553-9) following mild Covid; and [IQ loss](https://linkinghub.elsevier.com/retrieve/pii/S2589537021003242) for everyone. Mental health problems after Covid show up in most studies.
 
-Assuming the worst might be a sensible response. Risk appetites differ. Mine insists that I at least try to make some low-confidence guesses about unknowns based on the knowns:
+If any of that smoke turns out to be fire, bugger.
+
+Assuming the worst _might_ be a sensible response. Risk appetites differ. Mine insists that I at least try to make some low-confidence guesses about unknowns based on the knowns:
 
 #### Guess #1: _Uniquely_ terrible consequences are unlikely.
 
@@ -99,7 +101,7 @@ There have been tens of millions of infections in the UK alone. Anything serious
 Catching Covid is a double gamble.
 
 The first is getting through infection. _In January 2021_ someone like you faced
-~40:1 odds of hospitalisation.
+[~40:1 odds of hospitalisation](severity).
 
 The second is recovering without incident. Looking at the _visible_ risks and holding tight to a grain of salt someone like you faced ~300:1 odds of disability following a mild infection.
 
@@ -107,4 +109,4 @@ Those odds will change as the virus changes and treatments become available. We 
 
 For now, our best / only informed guess at current risk is recent risk.
 
-According to that guess you recently had ~**35:1** odds of an outcome that would have ruined our lives if you had caught Covid.
+According to that guess you recently had ~**35:1** odds of an unacceptable outcome if you had caught Covid.
