@@ -9,12 +9,12 @@ const DoormageddonHeader = () => {
             <div className={classify(styles["c-header"])}>
                 <ul className={classify(styles["c-header__menu"])}>
                     <li className={classify(styles["c-header__menuItem"])}>
-                        <Link
+                        <a
                             className={classify(styles["c-header__menuLink"])}
                             href="/"
                         >
                             Homewards
-                        </Link>
+                        </a>
                     </li>
 
                     <li className={classify(styles["c-header__menuItem"])}>

@@ -9,7 +9,7 @@ interface IProps {
 export const Header: React.FC<IProps> = ({ styles }) => {
     return (
         <header className={classify(styles["header"])}>
-            <Link
+            <a
                 href="/"
                 className={classify(
                     styles["headerLink"],
@@ -17,7 +17,7 @@ export const Header: React.FC<IProps> = ({ styles }) => {
                 )}
             >
                 Homewards
-            </Link>
+            </a>
             {outputContactLink(
                 "",
                 classify(styles["headerLink"], styles["headerLink--contact"])

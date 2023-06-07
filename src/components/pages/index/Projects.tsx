@@ -36,7 +36,7 @@ export const Projects: React.FC<IProps> = ({ projects }) => {
 
         return (
             <li className={classify(styles.projectListItem)} key={title}>
-                <Link
+                <a
                     className={classify(
                         styles.link,
                         styles.projectLink,
@@ -46,7 +46,7 @@ export const Projects: React.FC<IProps> = ({ projects }) => {
                     target={target}
                 >
                     <span>{title}</span>
-                </Link>{" "}
+                </a>{" "}
                 <span className={classify(styles.projectDate)}>
                     {date.substring(0, 4) + "/" + date.substring(4, 6)}
                 </span>
