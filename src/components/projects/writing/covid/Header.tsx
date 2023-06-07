@@ -15,6 +15,7 @@ export const Header: React.FC<IProps> = ({ styles }) => {
                     styles["headerLink"],
                     styles["headerLink--home"]
                 )}
+                prefetch={false}
             >
                 Homewards
             </Link>

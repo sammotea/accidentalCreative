@@ -44,6 +44,7 @@ export const Projects: React.FC<IProps> = ({ projects }) => {
                     )}
                     href={linkTo}
                     target={target}
+                    prefetch={false}
                 >
                     <span>{title}</span>
                 </Link>{" "}

@@ -12,6 +12,7 @@ const DoormageddonHeader = () => {
                         <Link
                             className={classify(styles["c-header__menuLink"])}
                             href="/"
+                            prefetch={false}
                         >
                             Homewards
                         </Link>
