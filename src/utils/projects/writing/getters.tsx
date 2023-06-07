@@ -35,7 +35,7 @@ export async function getTransforms(
 }
 
 export async function getAdditions(...route: string[]): Promise<any> {
-    const maybeAdditionsFile = path.join(additionsRoute, ...route) + ".tsx";
+    const maybeAdditionsFile = path.join(additionsRoute, ...route) + ".json";
     const hasAdditions = await fs.existsSync(maybeAdditionsFile);
 
     if (hasAdditions) {
