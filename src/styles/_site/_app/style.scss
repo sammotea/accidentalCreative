@@ -1,5 +1,9 @@
 @import '_reset.scss';
 
+html {
+    font-display: fallback;
+}
+
 .s-home {
     font-size: 20px;
 }
