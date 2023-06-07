@@ -7,15 +7,9 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head />
-                <script>
-                    /*to prevent Firefox FOUC, this must be here*/ let
-                    FF_FOUC_FIX;
-                </script>
+                <script>let FF_FOUC_FIX;</script>
                 <body>
-                    <script>
-                        /*to prevent Firefox FOUC, this must be here*/ let
-                        FF_FOUC_FIX2;
-                    </script>
+                    <script>let FF_FOUC_FIX2;</script>
                     <Main />
                     <NextScript />
                 </body>
