@@ -29,7 +29,6 @@ $bp--1		: 	34rem;
 	height: 100%;
     @include _font--body;
 	color: #333;
-	opacity: 1 !important;
 	
 	@include bp( 'after', $bp--1 ) {
 		padding: $space 2*$space;

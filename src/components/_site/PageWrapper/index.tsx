@@ -8,11 +8,7 @@ interface IProps {
 const PageWrapper: React.FC<IProps> = ({ className = "", children }) => {
     const cl = "l-header";
 
-    return (
-        <div className={className} style={{ opacity: 0 }}>
-            {children}
-        </div>
-    );
+    return <div className={className}>{children}</div>;
 };
 
 export default PageWrapper;
