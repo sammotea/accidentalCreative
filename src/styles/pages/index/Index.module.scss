@@ -254,17 +254,17 @@ margin-top: .5*$space;
 
 }
 
-$animationDuration : .25s;
+$animationDuration : .3s;
 
-$titleArrowDuration: 1*$animationDuration;
-$titleHighlightDelay: .5*$animationDuration;
-$titleHighlightDuration: 2*$animationDuration;
+$titleArrowDuration: .5*$animationDuration;
+$titleHighlightDelay: 0*$animationDuration;
+$titleHighlightDuration: 1*$animationDuration;
 $titleLowlightDelay: .5*$animationDuration;
-$titleLowlightDuration: 4*$animationDuration;
-$descItemsDelay: 2*$animationDuration;
+$titleLowlightDuration: 2*$animationDuration;
+$descItemsDelay: 1.5*$animationDuration;
 $descItemDuration: 2*$animationDuration;
-$descItemDelay: 1*$animationDuration;
-$ledesDelay: $descItemsDelay;
+$descItemDelay: .5*$animationDuration;
+$ledesDelay: 1.5*$animationDuration;
 $ledeDuration: $titleLowlightDuration;
 
 $bezier:  cubic-bezier(.45,.85,.35,.85);
