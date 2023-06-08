@@ -248,3 +248,103 @@ margin-top: .5*$space;
 		content: ')';
 	}
 }
+
+.title {
+	position: relative;
+
+}
+
+$animationDuration : .2s;
+
+$titleArrowDuration: 1.5*$animationDuration;
+$titleHighlightDelay: 0*$animationDuration;
+$titleHighlightDuration: 1*$animationDuration;
+$titleLowlightDelay: 2*$animationDuration;
+$titleLowlightDuration: 4*$animationDuration;
+$descItemsDelay: 2*$animationDuration;
+$descItemDuration: 2*$animationDuration;
+$descItemDelay: 2*$animationDuration;
+$ledesDelay: 2*$animationDuration;
+$ledeDuration: $titleLowlightDuration;
+
+$bezier:  cubic-bezier(.45,.85,.35,.85);
+
+.titleArrow {
+	position: absolute;
+	left: .1em;
+	top: .6em;
+	width: 1em;
+	height: .15em;
+	background:$c--text;
+	animation: titleArrow $titleArrowDuration $bezier both
+}
+
+.titleHighlight {
+	position: absolute;
+	left: 0;
+	top: 0;
+	animation: titleHighlight $titleHighlightDuration $bezier both;
+	animation-delay: ( $titleArrowDuration + $titleHighlightDelay );
+}
+
+.titleLowlight {
+	animation: fadeInBottom $titleLowlightDuration $bezier both;
+	display: inline-block;
+	text-indent: 3.9em;
+	animation-delay: $titleArrowDuration + $titleHighlightDelay + $titleHighlightDuration + $titleLowlightDelay;
+}
+
+.descItem {
+	animation: fadeInBottom $descItemDuration $bezier both;
+	animation-delay: $titleArrowDuration + $titleHighlightDelay + $titleHighlightDuration + $titleLowlightDelay + $descItemsDelay;
+
+	&:nth-child(2) {
+		animation-delay: $titleArrowDuration + $titleHighlightDelay + $titleHighlightDuration + $titleLowlightDelay + $descItemsDelay + $descItemDelay;
+	}
+
+	&:nth-child(3) {
+		animation-delay: $titleArrowDuration + $titleHighlightDelay + $titleHighlightDuration + $titleLowlightDelay + $descItemsDelay + $descItemDelay + $descItemDelay;
+	}
+}
+
+.lede {
+	animation: fadeInBottom $ledeDuration $bezier both;
+	animation-delay: $titleArrowDuration + $titleHighlightDelay + $titleHighlightDuration + $titleLowlightDelay + $descItemsDelay + $descItemDelay + $descItemDelay + $ledesDelay;
+}
+
+.contactWrap,
+.projectsWrap {
+	animation: fadeInBottom $ledeDuration $bezier both;
+	animation-delay: $titleArrowDuration + $titleHighlightDelay + $titleHighlightDuration + $titleLowlightDelay + $descItemsDelay + $descItemDelay + $descItemDelay + $ledesDelay;
+}
+
+@keyframes titleArrow {
+		0% {
+		 transform:translateX(110vw) scaleX(10)
+		}
+		100% {
+			transform: translateX(-5*$space) scaleX( 1 );
+		}
+}
+
+@keyframes titleHighlight {
+	0% {
+		opacity: 0;
+		transform: translateX( -6em );
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+@keyframes fadeInBottom {
+	0% {
+		opacity: 0;
+		transform: translateY( .5*$space );
+	}
+	100% {
+		opacity: 1;
+		transform: none;
+	}
+}

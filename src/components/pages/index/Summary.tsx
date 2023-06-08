@@ -13,8 +13,11 @@ export const Summary = () => {
     function renderTitle() {
         return (
             <h1 className={classify(styles.title, styles.l_module)}>
-                <span className={styles.titleHighlight}>I’m Sam.</span> I find
-                elegant solutions to hard problems.
+                <span className={styles.titleArrow}></span>
+                <span className={styles.titleHighlight}>I’m Sam.</span>{" "}
+                <span className={styles.titleLowlight}>
+                    I find elegant solutions to hard problems.
+                </span>
             </h1>
         );
     }
