@@ -25,7 +25,7 @@ I tried to give her the means to make her own model.
 
 ---
 
-Specifically I tried to exhaustively answer the question “_Should we get a Covid vaccine?_” which mapped to:
+Specifically I tried to exhaustively answer the question “_Should we get a Covid vaccine?_”… which mapped to:
 
 -   Is Covid dangerous to us? _If so_…
 -   Can we avoid catching it? _If not_…
@@ -35,14 +35,12 @@ Specifically I tried to exhaustively answer the question “_Should we get a Cov
 -   At what cost? _and_…
 -   What is unknowable and how should we account for that?
 
-Getting to the starting line took me ~95,000 words of notes, highlights, and first-pass summaries.
-
-To then write the three essays answering the first subquestion took me another 6 months: finding a narrative thread, double-checking my working, estimating my trust in the underlying data, and a long slog of summarising without misleading.
+Getting to the starting line took me ~95,000 words of notes and so, so many exclamations at the dire state of study design and statistical fuckitude.
 
 ---
 
 My goal was to protect and educate those I love. I had a [pretty good track-record](emailWarning).
 
-I failed as hard as a man could fail. My efforts changed nothing but my hair colour.
+I failed. I’m pretty certain my Mum never read any of it.
 
 Oh well. [What does Covid do?](symptoms)
