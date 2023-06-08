@@ -254,17 +254,17 @@ margin-top: .5*$space;
 
 }
 
-$animationDuration : .2s;
+$animationDuration : .25s;
 
-$titleArrowDuration: 1.5*$animationDuration;
-$titleHighlightDelay: 0*$animationDuration;
-$titleHighlightDuration: 1*$animationDuration;
-$titleLowlightDelay: 1*$animationDuration;
+$titleArrowDuration: 1*$animationDuration;
+$titleHighlightDelay: .5*$animationDuration;
+$titleHighlightDuration: 2*$animationDuration;
+$titleLowlightDelay: .5*$animationDuration;
 $titleLowlightDuration: 4*$animationDuration;
 $descItemsDelay: 2*$animationDuration;
 $descItemDuration: 2*$animationDuration;
 $descItemDelay: 1*$animationDuration;
-$ledesDelay: 2*$animationDuration;
+$ledesDelay: $descItemsDelay;
 $ledeDuration: $titleLowlightDuration;
 
 $bezier:  cubic-bezier(.45,.85,.35,.85);
@@ -288,6 +288,7 @@ $bezier:  cubic-bezier(.45,.85,.35,.85);
 }
 
 .titleLowlight {
+	max-width: 100%;
 	animation: fadeInBottom $titleLowlightDuration $bezier both;
 	display: inline-block;
 	text-indent: 3.9em;
