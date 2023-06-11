@@ -1,6 +1,4 @@
-import { NEXT_DATA } from "next/dist/shared/lib/utils";
 import classify from "@/utils/dev/classify";
-import { useRouter } from "next/router";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
 export default class MyDocument extends Document {
