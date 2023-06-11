@@ -8,31 +8,16 @@ type postIds =
     | "emailWarning";
 const posts = {
     introductionForStrangers: "Intro for Strangers",
-    symptoms: "What does Covid do?",
-    severity: "Who does Covid affect?",
-    longCovid: "What about Long Covid?",
+    symptoms: "What does COVID do?",
+    severity: "Who does COVID affect?",
+    longCovid: "What about Long COVID?",
     emailWarning: "Early warning email",
 };
 
 export const Sidebar: React.FC<{ postId: string }> = ({ postId }) => {
     const cl = "sidebar";
 
-    return (
-        <aside className={classify(`${cl}Wrap`)}>
-            {/* {renderIntro()} */}
-            {renderNav()}
-        </aside>
-    );
-
-    function renderIntro() {
-        return (
-            <div className={classify(`${cl}Section`, `${cl}Intro`)}>
-                <h1 className={classify(`${cl}Title`)}>
-                    A pragmatic guide to Covid risk for my Mum
-                </h1>
-            </div>
-        );
-    }
+    return <aside className={classify(`${cl}Wrap`)}>{renderNav()}</aside>;
 
     function renderNav() {
         return (

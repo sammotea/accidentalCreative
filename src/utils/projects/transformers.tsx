@@ -8,7 +8,7 @@ import { writingUrl } from "@/utils/projects/writing/markdownParser";
 
 const flattenMap = {
     covid: {
-        title: "Covid essays for Mum",
+        title: "COVID essays for Mum",
         pointsTo: "introductionForStrangers",
     },
 } as { [key: string]: { title: string; pointsTo: string } };
