@@ -5,17 +5,17 @@ designFlavour: "covid"
 order: 1
 ---
 
-I wrote this for my Mum to help her make _informed_ choices about how to live during Covid.
+I wrote this for my Mum to help her make _informed_ choices about how to live during COVID.
 
 I showed my working, provided context, and let her reach her own conclusions. There wasn’t much of that available at the time.
 
 ---
 
-Information about Covid was mostly black and white and wrong.
+Information about COVID was mostly black and white and wrong.
 
 Black _or_ white, rather:
 
--   “_Covid is deadly / just the flu!_”
+-   “_COVID is deadly / just the flu!_”
 -   “_Vaccines will save you / kill you!_”
 -   “_Masks save lives / do nothing!_”
 
@@ -25,9 +25,9 @@ I tried to give her the means to make her own model.
 
 ---
 
-Specifically I tried to exhaustively answer the question “_Should we get a Covid vaccine?_”… which mapped to:
+Specifically I tried to exhaustively answer the question “_Should we get a COVID vaccine?_”… which mapped to:
 
--   Is Covid dangerous to us? _If so_…
+-   Is COVID dangerous to us? _If so_…
 -   Can we avoid catching it? _If not_…
 -   Can we minimize the danger? _If so_…
 -   What options are realistically available to us? _For each_…
@@ -43,4 +43,4 @@ My goal was to protect and educate those I love. I had a [pretty good track-reco
 
 I failed. I’m pretty certain my Mum never read any of it.
 
-Oh well. [What does Covid do?](symptoms)
+Oh well. [What does COVID do?](symptoms)

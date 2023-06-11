@@ -1,16 +1,16 @@
 ---
-title: "What does Covid do?"
+title: "What does COVID do?"
 date: "2022-02-10"
 designFlavour: "covid"
 ---
 
-[Official guidelines](https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/) don’t tell us much. We want a realistic idea of how Covid might affect our lives and when to worry.
+[Official guidelines](https://www.nhs.uk/conditions/covid-19/covid-19-symptoms-and-what-to-do/) don’t tell us much. We want a realistic idea of how COVID might affect our lives and when to worry.
 
 Here’s how the disease progresses:
 
-## Inconvenient Covid
+## Inconvenient COVID
 
-_Inconvenient Covid_ feels like an odd cold.
+_Inconvenient COVID_ feels like an odd cold.
 
 Common symptoms include:
 
@@ -22,9 +22,9 @@ Common symptoms include:
 
 You’ll shake it off in a few weeks. Or—within a few days of feeling ill—it will get worse and become…
 
-## Ominous Covid
+## Ominous COVID
 
-_Ominous Covid_ feels like a scary flu. _Additional_ common symptoms include:
+_Ominous COVID_ feels like a scary flu. _Additional_ common symptoms include:
 
 -   Fever and / or chills;
 -   Exhaustion;
@@ -37,9 +37,9 @@ You might gasp for breath or pant after climbing the stairs. If so, start worryi
 
 If you struggle to finish a sentence, your oximeter readings drop below 95, or parts of you turn blue we panic and start thinking about…
 
-## Ruinous Covid
+## Ruinous COVID
 
-Covid starts as a respiratory disease. _Ruinous Covid_ is an everything disease.
+COVID starts as a respiratory disease. _Ruinous COVID_ is an everything disease.
 
 Your lungs may stop working and your immune system might go bonkers. Other organs may fail. All of these outcomes are life-threatening.
 
@@ -49,8 +49,8 @@ Recovery, if it happens, will be measured in months or years.
 
 ---
 
-I know one person who had _Ruinous Covid_. Over three hateful months his organs failed and he died. His death crushed people I adore.
+I know one person who had _Ruinous COVID_. Over three hateful months his organs failed and he died. His death crushed people I adore.
 
-This disease can break our family. I want us to take Covid seriously without losing our minds. That starts with calling things as they are: _Inconvenient_, _Ominous_, _Ruinous_.
+This disease can break our family. I want us to take COVID seriously without losing our minds. That starts with calling things as they are: _Inconvenient_, _Ominous_, _Ruinous_.
 
-Above is what Covid might do. Next-up: [Who gets what and why?](severity)
+Above is what COVID might do. Next-up: [Who gets what and why?](severity)

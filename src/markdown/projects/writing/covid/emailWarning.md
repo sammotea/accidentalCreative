@@ -1,13 +1,13 @@
 ---
-title: "Covid Early Warning"
+title: "COVID Early Warning"
 date: "2020-03-08"
 designFlavour: "covid"
 hideFromLists: true
 ---
 
-_I was about 3 months early to Covid and spent January and February preparing my loved ones: enough (useful) PPE to last 10 people for 60 days, food to last 60 days, contingency plans in the event of infection, and the habits we might need to avoid what initially looked like a deadly virus._
+_I was 3 months early to COVID and spent that quiet period preparing my loved ones: enough (useful) PPE to last 10 people for 60 days, food to last 60 days, contingency plans in the event of infection, and the habits we might need to avoid what initially looked like a deadly virus._
 
-_That done I wrote to friends with actionable information and my working on why Covid was worth taking seriously:_
+_That done I wrote to friends with actionable information and my working on why COVID was worth taking seriously:_
 
 ---
 
@@ -56,7 +56,7 @@ It was contained. When someone got it, they tracked down their contacts and lock
 
 “_Certain characteristics of the SARS virus made containment possible. Infected individuals usually did not transmit the virus until several days after symptoms began and were most infectious only by the tenth day or so of illness, when they develop severe symptoms. Therefore, effective isolation of patients was enough to control spread. If cases were infectious before symptoms appeared, or if asymptomatic cases transmitted the virus, the disease would have been much more difficult, perhaps even impossible, to control._”
 
-**I conclude the Covid-19 containment ship has sailed; if it even could have been contained, it wasn’t.**
+**I conclude the COVID-19 containment ship has sailed; if it even could have been contained, it wasn’t.**
 
 ### Question the second // Is there risk of infection?
 
@@ -68,7 +68,7 @@ I’ve never cruised but I’d guess it was less of an infection risk—shared s
 
 From other WHO SARS reports: “_There are currently no reports of the transmission of SARS from asymptomatic individuals._”
 
-Half of infected Covid-19 cruisoids were asymptomatic. I don’t know if that means they can spread it. If they can, bugger.
+Half of infected COVID-19 cruisoids were asymptomatic. I don’t know if that means they can spread it. If they can, bugger.
 
 …
 

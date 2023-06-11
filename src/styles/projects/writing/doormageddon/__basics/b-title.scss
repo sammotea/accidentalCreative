@@ -19,7 +19,7 @@
 	text-transform: uppercase;
 	
 	&:before {
-		content: '0' counter( b-title--section ) " /";
+		content: '0' counter( b-title--section ) " / ";
 		font-weight: 300;
 		z-index: 1;
 	}

@@ -2,7 +2,7 @@
     "usefuls": [
         {
             "org": "Gov.uk",
-            "linkTitle": "Covid dashboard",
+            "linkTitle": "COVID dashboard",
             "link": "https://coronavirus.data.gov.uk/",
             "description": "Case numbers, hospitalisations, deaths."
         },
@@ -20,9 +20,9 @@
         },
         {
             "org": "NHS",
-            "linkTitle": "Covid activity",
+            "linkTitle": "COVID activity",
             "link": "https://www.england.nhs.uk/statistics/statistical-work-areas/covid-19-hospital-activity/",
-            "description": "Numbers, severity, and trends of Covid patients."
+            "description": "Numbers, severity, and trends of COVID patients."
         },
         {
             "org": "Intensive Care National Audit & Research Center",
