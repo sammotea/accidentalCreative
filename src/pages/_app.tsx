@@ -1,8 +1,14 @@
 import "@/styles/_site/_app/style.scss";
 import type { AppProps } from "next/app";
-import { useEffect } from "react";
-import classify from "@/utils/dev/classify";
+import { Analytics } from "@vercel/analytics/react";
 
-export default function App({ Component, pageProps }: AppProps) {
-    return <Component {...pageProps} />;
+function MyApp({ Component, pageProps }: AppProps) {
+    return (
+        <>
+            <Component {...pageProps} />
+            <Analytics />
+        </>
+    );
 }
+
+export default MyApp;
