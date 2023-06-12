@@ -52,7 +52,7 @@ Of those ~700, 15% have recovered and 1% have died thus far. Over half showed an
 
 The (superficially) closest thing to this in my lifetime was SARS, which affected me not at all. The WHO published their after-report in 2006: ‘[SARS: how a global epidemic was stopped.](https://apps.who.int/iris/bitstream/handle/10665/207501/9290612134_eng.pdf?sequence=1&isAllowed=y)’
 
-It was contained. When someone got it, they tracked down their contacts and locked down their recent locations and everyone in them. There were ~5 major outbreaks, all of which were caught in time and treated with gusto. Their conclusive summary:
+SARS was contained. When someone got it, they tracked down their contacts and locked down their recent locations and everyone in them. There were ~5 major outbreaks, all of which were caught in time and treated with gusto. Their conclusive summary:
 
 “_Certain characteristics of the SARS virus made containment possible. Infected individuals usually did not transmit the virus until several days after symptoms began and were most infectious only by the tenth day or so of illness, when they develop severe symptoms. Therefore, effective isolation of patients was enough to control spread. If cases were infectious before symptoms appeared, or if asymptomatic cases transmitted the virus, the disease would have been much more difficult, perhaps even impossible, to control._”
 
