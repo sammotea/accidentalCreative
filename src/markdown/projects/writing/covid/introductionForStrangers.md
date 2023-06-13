@@ -41,6 +41,6 @@ Getting to the starting line took me ~95,000 words of notes and so, so many excl
 
 My goal was to protect and educate those I love. I had a [pretty good track-record](emailWarning).
 
-I failed. My Mum never read any of it. I then quit while I was behind.
+I failed. My Mum never read any of it. I quit while I was behind.
 
 Oh well. [What does COVID do?](symptoms)
