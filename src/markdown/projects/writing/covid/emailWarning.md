@@ -7,7 +7,7 @@ hideFromLists: true
 
 _I was 3 months early to COVID and spent that quiet period preparing my loved ones: enough (useful) PPE to last 10 people for 60 days, food to last 60 days, contingency plans in the event of infection, and the habits we might need to avoid what initially looked like a deadly virus._
 
-_That done I wrote to friends with actionable information and my working on why COVID was worth taking seriously:_
+_That done I sent the email below to friends with actionable information and my working on why COVID was worth taking seriously:_
 
 ---
 
