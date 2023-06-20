@@ -5,7 +5,7 @@ designFlavour: "covid"
 order: 1
 ---
 
-I wrote this for my Mum to help her make _informed_ choices about how to live during COVID.
+I wrote this for my Mum in 2021/2022 to help her make _informed_ choices about how to live during COVID.
 
 I showed my working, provided context, and let her reach her own conclusions. There wasn’t much of that available at the time.
 
