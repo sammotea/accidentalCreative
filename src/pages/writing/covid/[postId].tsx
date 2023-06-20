@@ -35,7 +35,7 @@ const Post: React.FC<InferGetStaticPropsType<typeof getStaticProps>> = ({
             <PageWrapper className={classify(s[`${cl}`], s.pageWrapper)}>
                 <Header styles={s} />
                 <article>
-                    <Title styles={s} title={title} />
+                    <Title styles={s} title={title} date={postData.date} />
                     <Sidebar postId={id} />
                     <div
                         className={classify(s["contentWrap"])}

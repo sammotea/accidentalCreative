@@ -348,8 +348,13 @@ $sidebarWidth   :   14rem;
 .title {
     position: relative;
     font-size: $charlie;
-    margin-bottom: $space;
+    margin-bottom: .25*$space;
+}
 
+.date {
+    margin-bottom :$space;
+    font-variant:small-caps;
+    font-weight: 400;
 }
 
 .contentWrap {
