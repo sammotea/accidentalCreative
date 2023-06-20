@@ -9,6 +9,8 @@ _I was 3 months early to COVID and spent that quiet period preparing my loved on
 
 _That done I sent the email below to friends with actionable information and my working on why COVID was worth taking seriously:_
 
+**(This was written in February 2020.)**
+
 ---
 
 Oh hello.

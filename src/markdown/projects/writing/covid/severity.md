@@ -53,6 +53,8 @@ XIMAGE
 
 XIMAGE
 
+(Nb: ‘65+’ lumps 95 year olds in with 66 year olds; the difference between those cohorts was _enormous_. But the mortality statistics in the UK didn’t offer finer demographics slices, alas.)
+
 ### Outcomes by health status
 
 The unhealthy were at higher risk. The pre-existing health problems that mattered most are common as muck.
