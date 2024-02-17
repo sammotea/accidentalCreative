@@ -13,7 +13,7 @@ export const Summary = () => {
     function renderTitle() {
         return (
             <h1 className={classify(styles.title, styles.l_module)}>
-                <span className={styles.titleArrow}></span>
+                {/* <span className={styles.titleArrow}></span> */}
                 <span className={styles.titleHighlight}>I’m Sam.</span>{" "}
                 <span className={styles.titleLowlight}>
                     I find elegant solutions to hard problems.
@@ -48,6 +48,17 @@ export const Summary = () => {
                 <p className={classify(styles.lede, styles.l_module)}>
                     I fill in the messy bits between theory and practice, call
                     things by their real name, and keep my word.
+                </p>
+
+                <p className={classify(styles.aiSite, styles.l_module)}>
+                    Recently I’ve been{" "}
+                    <a
+                        href="https://ai.accidentalcreative.co.uk/"
+                        target="_blank"
+                    >
+                        building interesting things with generative AI
+                    </a>
+                    .
                 </p>
 
                 <p className={classify(styles.lede, styles.l_module)}>
