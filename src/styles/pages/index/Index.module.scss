@@ -147,6 +147,12 @@ $bp--1: 34rem;
     }
 }
 
+.contactText {
+    & + & {
+        margin-top: 0.5 * $space;
+    }
+}
+
 .contactLink span {
     &:after {
         content: attr(data-name) "@" attr(data-dom) "." attr(data-tld);
