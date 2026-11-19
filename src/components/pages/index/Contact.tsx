@@ -24,6 +24,18 @@ export const Contact = () => {
                         classify(styles.contactLink, styles.link)
                     )}
                 </p>
+
+                <p className={classify(styles.contactText)}>
+                    LinkedIn{" "}
+                    <a
+                        className={classify(styles.contactLink, styles.link)}
+                        href="https://www.linkedin.com/in/sam--t/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        sam--t
+                    </a>
+                </p>
             </>
         );
     }
